@@ -17,14 +17,6 @@
   }
 }
 
-.rouble {
-  font-family: $ff-rouble;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-  /* stylelint-enable */
-}
-
 .visually-hidden {
   position: absolute;
 
@@ -68,4 +60,89 @@
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+
+.to-top-btn {
+  position: fixed;
+  bottom: 36px;
+  right: 36px;
+  width: 86px;
+  height: 86px;
+  background-color: $color-bright-turquoise;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 10;
+  transition: background-color $trans-default;
+
+  @include vp-1279 {
+    width: 40px;
+    height: 40px;
+
+    svg {
+      width: 20px;
+      height: 11px;
+    }
+  }
+
+  @include hover {
+    background-color: $color-default-white;
+    opacity: 1;
+  }
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+main {
+  position: relative;
+
+  &::after {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 50%;
+    width: 942px;
+    height: 942px;
+    background: url("../img/intro-grad.png") center no-repeat;
+    pointer-events: none;
+
+    @include vp-1023 {
+      display: none;
+    }
+  }
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-23 {
+  margin-bottom: 23px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mb-31 {
+  margin-bottom: 31px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.mb-51 {
+  margin-bottom: 51px;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+.pt-12 {
+  padding-top: 12px;
 }

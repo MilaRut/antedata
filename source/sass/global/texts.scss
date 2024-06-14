@@ -1,0 +1,34 @@
+.semibold-condensed {
+  font-variation-settings: "wght" 600, "wdth" 75;
+}
+
+.semilight-condensed {
+  font-variation-settings: "wght" 350, "wdth" 75;
+}
+
+.light-condensed {
+  font-variation-settings: "wght" 300, "wdth" 75;
+}
+
+.condensed {
+  font-variation-settings: "wght" 400, "wdth" 75;
+}
+
+.accent {
+  color: $color-bright-turquoise;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  color: $color-default-white;
+  text-decoration: none;
+}

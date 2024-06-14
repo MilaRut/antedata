@@ -1,0 +1,100 @@
+.boxes {
+  width: 376px;
+  height: 304px;
+  background: url("../img/intro-bg.png") center no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 119px;
+  margin-top: -44px;
+
+  @include vp-1279 {
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  @include vp-767 {
+    position: absolute;
+    top: -38px;
+    right: -115px;
+    transform: scale(0.45);
+  }
+
+  .boxes-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 345px;
+    height: 239px;
+  }
+
+  .box {
+    position: absolute;
+    overflow: hidden;
+    margin-right: 10px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: 1;
+      bottom: -2px;
+    }
+
+    &::before {
+      width: 36px;
+      height: 9px;
+      background: linear-gradient(-168deg, transparent 0%, transparent 50%, #1f3332 50%, #1f3332 100%);
+      left: 0;
+    }
+
+    &::after {
+      width: 22px;
+      height: 14px;
+      background: linear-gradient(150deg, transparent 0%, transparent 50%, #1f3332 50%, #1f3332 100%);
+      right: 0;
+    }
+  }
+
+  .box--1 {
+    width: 56px;
+    height: 66px;
+    bottom: 22px;
+    left: 20px;
+  }
+
+  .box--2 {
+    width: 57px;
+    height: 114px;
+    bottom: 40px;
+    left: 87px;
+  }
+
+  .box--3 {
+    width: 56px;
+    height: 77px;
+    bottom: 21px;
+    left: 154px;
+  }
+
+  .box--4 {
+    width: 57px;
+    height: 114px;
+    bottom: 0;
+    left: 221px;
+  }
+
+  .box--5 {
+    width: 56px;
+    height: 193px;
+    bottom: 17px;
+    left: 288px;
+  }
+
+  svg {
+    position: absolute;
+    top: calc(100% - 18px);
+    animation: grow 0.4s forwards;
+  }
+}

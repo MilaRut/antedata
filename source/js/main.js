@@ -1,6 +1,11 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {scrollToTop, showButton} from './modules/top-btn';
+import {showDropdownList} from './modules/modals/dropdown';
+import {changeLogo} from './modules/header';
+import {setInputBg} from './modules/inputs';
+import {initAnimations} from './modules/animations';
 
 // ---------------------------------
 
@@ -10,6 +15,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  scrollToTop();
+  showButton();
+  showDropdownList();
+  changeLogo();
 
   // Modules
   // ---------------------------------
@@ -21,6 +30,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    setInputBg();
+    initAnimations();
   });
 });
 

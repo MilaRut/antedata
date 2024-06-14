@@ -1,0 +1,27 @@
+.section {
+  padding: 100px 0 95px;
+
+  @include vp-767 {
+    padding: 76px 0 0;
+  }
+}
+
+.section__subtitle {
+  @include font-settings($ff-tilda, 500, 24px, 1.2);
+
+  @include vp-1023 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+}
+
+.section__title {
+  @include font-settings($ff-bahn, 350, 64px, 1.2);
+  text-transform: uppercase;
+
+  @include vp-1023 {
+    font-size: 32px;
+    text-align: center;
+  }
+}

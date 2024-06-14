@@ -1,0 +1,250 @@
+.intro {
+  padding-top: 152px;
+  padding-bottom: 132px;
+
+  @include vp-1023 {
+    padding-top: 76px;
+    padding-bottom: 0;
+  }
+
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.intro__heading {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  @include vp-1023 {
+    margin-bottom: 36px;
+  }
+
+  @include vp-767 {
+    min-height: 208px;
+  }
+}
+
+.intro__text {
+  @include font-settings($ff-bahn, 350, 64px, 1.2);
+  text-transform: uppercase;
+  max-width: 572px;
+  padding-top: 47px;
+  z-index: 10;
+
+  @include vp-767 {
+    font-size: 40px;
+    max-width: 330px;
+    padding-top: 29px;
+  }
+}
+
+.intro__advantages {
+  position: relative;
+  background-color: $color-nero;
+  padding: 32px 48px;
+  border-radius: 20px;
+  margin-top: -19px;
+  margin-bottom: 46px;
+  z-index: 1;
+
+  @include vp-1279 {
+    margin-top: 0;
+  }
+
+  @include vp-767 {
+    background-color: transparent;
+    margin-bottom: 47px;
+    padding: 0;
+  }
+}
+
+.intro__advantages-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.intro__advantages-item {
+  position: relative;
+
+  @include vp-767 {
+    background-color: $color-nero;
+    width: 100%;
+    max-width: 288px;
+    padding: 30px 16px 13px;
+  }
+
+  p {
+    @include font-settings($ff-tilda, 500, 24px, 1.18);
+    position: relative;
+    z-index: 50;
+
+    @include vp-1023 {
+      font-size: 16px;
+    }
+  }
+
+  span {
+    @include font-settings($ff-bahn, 600, 32px, 1.18);
+    text-transform: uppercase;
+    display: block;
+    padding-top: 5px;
+
+    @include vp-1023 {
+      font-size: 26px;
+      padding-top: 0;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: 100px;
+
+    @include vp-767 {
+      margin-right: 0;
+      margin-bottom: 24px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      transform: translateY(-50%);
+      right: -88px;
+      width: 25px;
+      height: 46px;
+      background: url("../img/svg/arrow-left.svg") center no-repeat;
+
+      @include vp-1023 {
+        right: -40px;
+      }
+
+      @include vp-767 {
+        display: none;
+      }
+    }
+  }
+
+  &:first-child {
+    @include vp-1023 {
+      padding-top: 9px;
+    }
+
+    &::after {
+      right: -30px;
+    }
+  }
+
+  &:last-child {
+    padding-left: 60px;
+
+    @include vp-1023 {
+      padding-left: 16px;
+    }
+  }
+}
+
+.intro__advantages-decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  &--top {
+    @include vp-767 {
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 50%;
+        height: 36px;
+        top: -24px;
+        background-color: $color-default-black;
+      }
+
+      &::before {
+        left: 0;
+        transform: skew(0, 5deg);
+      }
+
+      &::after {
+        right: 0;
+        transform: skew(0, -5deg);
+      }
+    }
+  }
+
+  &--bottom {
+    @include vp-767 {
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 50%;
+        height: 36px;
+        bottom: -14px;
+        background-color: $color-nero;
+        border-bottom: 1px solid $color-bright-turquoise;
+        z-index: 10;
+      }
+
+      &::before {
+        left: 0;
+        transform: skew(0, 5deg);
+      }
+
+      &::after {
+        right: 0;
+        transform: skew(0, -5deg);
+      }
+    }
+  }
+}
+
+.intro__advantages-btn {
+  @include font-settings($ff-tilda, 900, 24px, 1.2);
+  text-transform: uppercase;
+  padding: 12px 24px;
+  position: relative;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color $trans-default;
+
+  @include vp-767 {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  @include hover {
+    background-color: $color-default-white;
+    opacity: 1;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -69px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 67px;
+    height: 43px;
+    background: url("../img/svg/arrow-down.svg") center no-repeat;
+    pointer-events: none;
+
+    @include vp-1023 {
+      display: none;
+    }
+  }
+}

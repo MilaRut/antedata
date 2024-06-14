@@ -1,0 +1,329 @@
+.chart {
+  width: 100%;
+  max-width: 1120px;
+  padding-top: 298px;
+  overflow: hidden;
+
+  @include vp-1023 {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 0;
+  }
+}
+
+.chart__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+  @include vp-1023 {
+    grid-template-columns: auto;
+    gap: 0;
+  }
+}
+
+.chart__text {
+  @include font-settings($ff-bahn, 400, 24px, 1.2);
+  color: $color-default-black;
+  z-index: 10;
+
+  @include vp-1023 {
+    color: $color-bright-turquoise;
+    text-align: center;
+  }
+
+  span {
+    @include font-settings($ff-tilda, 500, 21px, 1.2);
+    display: block;
+    padding-top: 10px;
+
+    @include vp-1023 {
+      font-size: 16px;
+      padding-top: 0;
+    }
+  }
+}
+
+.chart__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 272px;
+  padding: 29px 0 26px;
+  background: url("../img/chart-item-2.png") center no-repeat;
+  background-size: 100%;
+  transform: translateX(-1200px);
+
+  @include vp-1023 {
+    background: url("../img/chart-item-mob-2.png") center no-repeat;
+    width: 118px;
+    padding: 0;
+    transform: translateY(-600px);
+  }
+
+  &:nth-child(1) {
+    background: url("../img/chart-item-1.png") center no-repeat;
+    background-size: 100%;
+    padding-right: 16px;
+    z-index: 5;
+
+    @include vp-1023 {
+      background: url("../img/chart-item-mob-1.png") center no-repeat;
+      height: 86px;
+      padding-right: 0;
+    }
+  }
+
+  &:nth-child(2) {
+    z-index: 4;
+
+    @include vp-1023 {
+      height: 164px;
+    }
+  }
+
+  &:nth-child(3) {
+    z-index: 3;
+
+    @include vp-1023 {
+      height: 164px;
+    }
+  }
+
+  &:nth-child(4) {
+    z-index: 2;
+
+    @include vp-1023 {
+      background: url("../img/chart-item-mob-3.png") center no-repeat;
+      height: 119px;
+    }
+  }
+}
+
+.chart__bubble {
+  @include font-settings($ff-tilda, 500, 21px, 1.2);
+  text-align: center;
+  position: absolute;
+  border: 2px solid #5a525a;
+  border-radius: 10px;
+  padding: 11px 0;
+  background-color: $color-default-black;
+  z-index: -1;
+
+  @include vp-1023 {
+    font-size: 16px;
+    border: none;
+    text-align: left;
+    background-color: transparent;
+  }
+
+  &--1 {
+    width: 301px;
+    left: -12px;
+    top: -90px;
+    opacity: 0;
+    transform: translateY(200px);
+
+    @include vp-1023 {
+      width: 112px;
+      top: 50px;
+      left: 172px;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -37px;
+      left: 89px;
+      width: 82px;
+      height: 37px;
+    }
+
+    &::before {
+      background: #5a525a;
+      clip-path: polygon(0 0, 0% 100%, 50% 0);
+
+      @include vp-1023 {
+        bottom: 30px;
+        left: -48px;
+        width: 40px;
+        height: 2px;
+        background-color: $color-default-white;
+        clip-path: none;
+      }
+    }
+
+    &::after {
+      background: $color-default-black;
+      clip-path: polygon(3% 0, 3% 89%, 46% 0);
+
+      @include vp-1023 {
+        display: none;
+      }
+    }
+  }
+
+  &--2 {
+    width: 308px;
+    left: -83px;
+    top: -146px;
+    opacity: 0;
+    transform: translateY(200px);
+
+    @include vp-1023 {
+      width: 112px;
+      top: 28px;
+      left: 172px;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -89px;
+      left: 106px;
+      width: 90px;
+      height: 89px;
+    }
+
+    &::before {
+      background-color: #5a525a;
+      clip-path: polygon(100% 0, 50% 0, 100% 100%);
+
+      @include vp-1023 {
+        bottom: 30px;
+        left: -48px;
+        width: 40px;
+        height: 2px;
+        background-color: $color-default-white;
+        clip-path: none;
+      }
+    }
+
+    &::after {
+      background-color: $color-default-black;
+      clip-path: polygon(98% 0%, 52% 0%, 98% 93%);
+
+      @include vp-1023 {
+        display: none;
+      }
+    }
+  }
+
+  &--3 {
+    @include font-settings($ff-bahn, 400, 24px, 1);
+    text-transform: uppercase;
+    background-color: transparent;
+    top: -199px;
+    right: -64px;
+    width: 133px;
+    height: 45px;
+    border: none;
+
+    @include vp-1023 {
+      font-size: 20px;
+      top: 123px;
+      right: auto;
+      left: 160px;
+      width: 106px;
+      height: 29px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "Our forecast";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $color-bright-turquoise;
+      color: $color-default-black;
+      border-radius: 10px;
+      padding: 11px 0;
+      opacity: 0;
+
+      @include vp-1023 {
+        padding: 4px 6px;
+        border-radius: 8px;
+        top: 18px;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 0;
+      bottom: -151px;
+      left: 48%;
+      background-color: $color-bright-turquoise;
+
+      @include vp-1023 {
+        width: 0;
+        height: 2px;
+        left: -39px;
+        bottom: auto;
+        top: 33px;
+      }
+    }
+  }
+
+  &--4 {
+    font-size: 24px;
+    border-color: #b58426;
+    color: #b58426;
+    padding: 15px;
+    top: -109px;
+    right: 18px;
+    opacity: 0;
+    transform: translateY(200px);
+
+    @include vp-1023 {
+      font-size: 16px;
+      width: 112px;
+      top: 45px;
+      left: 172px;
+      padding: 0;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -49px;
+      right: 61px;
+      width: 67px;
+      height: 50px;
+    }
+
+    &::before {
+      background-color: #b58426;
+      clip-path: polygon(0 1%, 0% 100%, 50% 1%);
+
+      @include vp-1023 {
+        bottom: 25px;
+        left: -48px;
+        width: 40px;
+        height: 2px;
+        background-color: #b58426;
+        clip-path: none;
+      }
+    }
+
+    &::after {
+      background: $color-default-black;
+      clip-path: polygon(3% 0, 3% 89%, 46% 0);
+
+      @include vp-1023 {
+        display: none;
+      }
+    }
+  }
+}

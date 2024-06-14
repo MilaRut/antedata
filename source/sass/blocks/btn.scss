@@ -1,17 +1,19 @@
 .btn {
   display: inline-flex;
   padding: 10px 20px;
+  background-color: $color-bright-turquoise;
+  color: $color-default-black;
 
-  color: $color-default-white;
-
-  background-color: $color-neon-blue;
   border: none;
+  border-radius: 50px;
   cursor: pointer;
 
   transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-torch-red;
+  &--inverted {
+    background-color: transparent;
+    border: 2px solid$color-bright-turquoise;
+    color: $color-bright-turquoise;
   }
 
   &:disabled {
@@ -21,6 +23,6 @@
   }
 
   @include hover-focus {
-    opacity: 0.8;
+    opacity: 0.5;
   }
 }
