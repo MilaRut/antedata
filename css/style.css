@@ -3565,6 +3565,13 @@ body:has(.static) .header__home-link {
   .header__nav-item--contact {
     margin-top: -8px;
     margin-left: 68px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .header__nav-item--contact .header__nav-link {
+    padding: 6px 16px;
   }
 
   .intro {
@@ -3755,6 +3762,18 @@ body:has(.static) .header__home-link {
     padding: 4px 6px;
     border-radius: 8px;
     top: 18px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .chart__bubble--3::after {
