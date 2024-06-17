@@ -3456,10 +3456,6 @@ body:has(.static) .header__home-link {
   padding-left: 25px;
 }
 
-#certificate .modal__wrapper {
-  padding: 0;
-}
-
 #certificate .modal__content {
   padding: 46px 64px 22px;
 }
