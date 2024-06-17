@@ -13,6 +13,9 @@
 }
 
 .feedback__contact-wrapper {
+  opacity: 0;
+  transform: translateX(-100%);
+
   @include vp-767 {
     margin: 0 auto;
   }
@@ -169,6 +172,8 @@
 }
 
 .feedback__form {
+  opacity: 0;
+  transform: translateX(100%);
   width: 53.5%;
 
   @include vp-767 {

@@ -10,8 +10,15 @@
     max-width: 1200px;
   }
 
+  .section__subtitle {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+
   .section__title {
     margin-bottom: 15px;
+    opacity: 0;
+    transform: translateY(200px);
   }
 }
 
@@ -19,6 +26,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  overflow: hidden;
 
   @include vp-767 {
     grid-template-columns: auto;
@@ -40,6 +48,21 @@
   @include vp-767 {
     max-width: 100%;
     padding: 21px 16px 24px;
+  }
+
+  &--1 {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  &--2 {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+
+  &--3 {
+    transform: translateX(100%);
+    opacity: 0;
   }
 }
 

@@ -1,12 +1,25 @@
 .boxes {
+  position: relative;
   width: 376px;
   height: 304px;
-  background: url("../img/intro-bg.png") center no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 119px;
   margin-top: -44px;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../img/intro-bg.png");
+    transform: translateY(100%);
+    animation: bg-grow 0.5s ease-in-out forwards;
+  }
 
   @include vp-1279 {
     margin-right: 0;
@@ -37,7 +50,7 @@
     &::before,
     &::after {
       position: absolute;
-      content: "";
+      // content: "";
       z-index: 1;
       bottom: -2px;
     }
@@ -95,6 +108,8 @@
   svg {
     position: absolute;
     top: calc(100% - 18px);
-    animation: grow 0.4s forwards;
+    opacity: 0;
+    animation: grow 0.2s forwards;
+    animation-delay: 0.8s;
   }
 }

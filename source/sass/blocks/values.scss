@@ -45,6 +45,26 @@
     max-width: 100%;
     padding: 21px 16px 24px;
   }
+
+  &--1 {
+    opacity: 0;
+    transform: translate(-100px, -100px);
+  }
+
+  &--2 {
+    opacity: 0;
+    transform: translate(100px, -100px);
+  }
+
+  &--3 {
+    opacity: 0;
+    transform: translate(-100px, 100px);
+  }
+
+  &--4 {
+    opacity: 0;
+    transform: translate(100px, 100px);
+  }
 }
 
 .values__title {

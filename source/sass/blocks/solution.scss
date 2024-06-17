@@ -23,6 +23,8 @@
   @include font-settings($ff-tilda, 500, 24px, 1.2);
   max-width: 800px;
   margin-bottom: 71px;
+  transform: translateX(-100%);
+  opacity: 0;
 
   @include vp-767 {
     font-size: 16px;
@@ -36,6 +38,7 @@
   gap: 31px;
   counter-reset: list;
   margin-bottom: 72px;
+  overflow: hidden;
 
   @include vp-767 {
     grid-template-columns: auto;
@@ -54,6 +57,21 @@
   @include vp-1279 {
     min-height: auto;
     padding: 24px 16px;
+  }
+
+  &--1 {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  &--2 {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  &--3 {
+    transform: translateX(100%);
+    opacity: 0;
   }
 }
 
@@ -101,6 +119,8 @@
   text-transform: uppercase;
   padding: 13px 24px;
   transition: background-color $trans-default;
+  opacity: 0;
+  transform: translateY(200px);
 
   @include vp-767 {
     font-size: 14px;
