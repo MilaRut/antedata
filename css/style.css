@@ -1200,6 +1200,32 @@ a {
   }
 }
 
+@-webkit-keyframes draw-line {
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes draw-line {
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes show {
   0% {
     opacity: 0;
@@ -2636,6 +2662,19 @@ a {
   left: 0;
 }
 
+.schema .path-1,
+.schema .path-2,
+.schema .path-3,
+.schema .path-4 {
+  opacity: 0;
+}
+
+.schema .path-1,
+.schema .path-3 {
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+}
+
 .values {
   padding-bottom: 73px;
 }
@@ -3699,23 +3738,24 @@ body:has(.static) .header__home-link {
   animation-delay: 17s;
 }
 
-.start.mask {
-  stroke-dasharray: 2000;
-  stroke-dashoffset: 2000;
-  -webkit-animation: dash 1s linear;
-  animation: dash 1s linear;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+.start.schema__svg .path-1 {
+  -webkit-animation: draw-line 1s linear 6s forwards;
+  animation: draw-line 1s linear 6s forwards;
 }
 
-.start.mask--1 {
-  -webkit-animation-delay: 6s;
-  animation-delay: 6s;
+.start.schema__svg .path-2 {
+  -webkit-animation: fade-in 1s linear 6s forwards;
+  animation: fade-in 1s linear 6s forwards;
 }
 
-.start.mask--2 {
-  -webkit-animation-delay: 15s;
-  animation-delay: 15s;
+.start.schema__svg .path-3 {
+  -webkit-animation: draw-line 1s linear 15s forwards;
+  animation: draw-line 1s linear 15s forwards;
+}
+
+.start.schema__svg .path-4 {
+  -webkit-animation: fade-in 1s linear 15s forwards;
+  animation: fade-in 1s linear 15s forwards;
 }
 
 .start.chart .chart__item {
@@ -3948,7 +3988,7 @@ body:has(.static) .header__home-link {
 
   .schema__block {
     padding: 10px;
-    border: 1px dashed #01e4db;
+    border: 2px dashed #01e4db;
     border-radius: 20px;
     width: auto;
     gap: 40px;
