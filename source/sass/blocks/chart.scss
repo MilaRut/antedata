@@ -277,8 +277,8 @@
 
   &--4 {
     font-size: 24px;
-    border-color: #b58426;
-    color: #b58426;
+    border-color: $color-mandalay;
+    color: $color-mandalay;
     padding: 15px;
     top: -109px;
     right: 18px;
@@ -304,7 +304,7 @@
     }
 
     &::before {
-      background-color: #b58426;
+      background-color: $color-mandalay;
       clip-path: polygon(0 1%, 0% 100%, 50% 1%);
 
       @include vp-1023 {
@@ -312,7 +312,7 @@
         left: -48px;
         width: 40px;
         height: 2px;
-        background-color: #b58426;
+        background-color: $color-mandalay;
         clip-path: none;
       }
     }
@@ -327,3 +327,5 @@
     }
   }
 }
+
+

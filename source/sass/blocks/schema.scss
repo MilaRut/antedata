@@ -7,6 +7,7 @@
   height: 443px;
   margin: 17px 0 77px;
   padding: 36px 15px 17px;
+  z-index: 1;
 
   @include vp-1279 {
     gap: 30px;
@@ -31,7 +32,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: linear-gradient(0deg, $color-default-black 0%, $color-default-black 38%, $color-nero 38%, $color-nero 96%, $color-default-black 96%, $color-default-black 100%);
+    background: linear-gradient(0deg, $color-transparent 0%, $color-transparent 38%, $color-nero 38%, $color-nero 96%, $color-transparent 96%, $color-transparent 100%);
 
     @include vp-1023 {
       display: none;
@@ -49,7 +50,8 @@
 
   @include vp-1279 {
     padding: 10px;
-    border: 1px dashed $color-bright-turquoise;
+    border: 2px dashed $color-bright-turquoise;
+    border-color: $color-transparent;
     border-radius: 20px;
     width: auto;
     gap: 40px;
@@ -61,7 +63,7 @@
 
   &--2 {
     @include vp-1279 {
-      border-color: #b58426;
+      border-color: $color-transparent;
     }
 
     @include vp-1023 {
@@ -77,9 +79,13 @@
   left: -10px;
   pointer-events: none;
 
+  @include vp-1279 {
+    display: none;
+  }
+
   svg {
     @include vp-1279 {
-      display: none;
+      animation: none;
     }
   }
 }
@@ -130,8 +136,8 @@
       content: "";
       top: 88px;
       right: -53px;
-      width: 25px;
-      height: 45px;
+      width: 24px;
+      height: 56px;
       background: url("../img/svg/arrow-left.svg") center no-repeat;
       opacity: 0;
       transform: translateX(-10px);
@@ -146,7 +152,7 @@
   &--3 {
     &::after {
       @include vp-1279 {
-        right: 0;
+        right: -20px;
       }
     }
   }
@@ -256,7 +262,7 @@
   p {
     @include font-settings($ff-bahn, 600, 32px, 1.2);
     text-transform: uppercase;
-    color: #b58426;
+    color: $color-mandalay;
     width: 243px;
     margin-right: 26px;
     padding-left: 15px;
@@ -303,11 +309,27 @@
 .schema__block--2 {
   .schema__bottom-right {
     p {
-      color: #b58426;
+      color: $color-mandalay;
     }
   }
 
   .schema__border {
     left: 0;
+  }
+}
+
+.schema {
+
+  .path-1,
+  .path-2,
+  .path-3,
+  .path-4 {
+    opacity: 0;
+  }
+
+  .path-1,
+  .path-3 {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
   }
 }

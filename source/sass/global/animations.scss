@@ -212,6 +212,39 @@
   }
 }
 
+@keyframes border-color-1 {
+  from {
+    border-color: transparent;
+  }
+
+  to {
+    border-color: $color-bright-turquoise;
+  }
+}
+
+@keyframes border-color-2 {
+  from {
+    border-color: $color-transparent;
+  }
+
+  to {
+    border-color: $color-mandalay;
+  }
+}
+
+@keyframes draw-line {
+  100% {
+     stroke-dashoffset: 0;
+     opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  100% {
+     opacity: 1;
+  }
+}
+
 // show (opacity)
 @keyframes show {
   0% {

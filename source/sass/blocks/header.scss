@@ -36,11 +36,16 @@
     width: 286px;
     height: 62px;
     margin-bottom: 5px;
+    cursor: pointer;
 
     @include vp-1023 {
       width: 158px;
       height: 35px;
       margin-bottom: 0;
+    }
+
+    @include hover {
+      opacity: 0.8;
     }
   }
 
@@ -64,7 +69,7 @@
   .header__logo {
     &--img {
       width: 158px;
-      height: 32px;
+      height: 35px;
       margin-bottom: 0;
     }
 
