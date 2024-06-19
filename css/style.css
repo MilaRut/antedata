@@ -1200,6 +1200,46 @@ a {
   }
 }
 
+@-webkit-keyframes border-color-1 {
+  from {
+    border-color: transparent;
+  }
+
+  to {
+    border-color: #01e4db;
+  }
+}
+
+@keyframes border-color-1 {
+  from {
+    border-color: transparent;
+  }
+
+  to {
+    border-color: #01e4db;
+  }
+}
+
+@-webkit-keyframes border-color-2 {
+  from {
+    border-color: rgba(255, 255, 255, 0);
+  }
+
+  to {
+    border-color: #b58426;
+  }
+}
+
+@keyframes border-color-2 {
+  from {
+    border-color: rgba(255, 255, 255, 0);
+  }
+
+  to {
+    border-color: #b58426;
+  }
+}
+
 @-webkit-keyframes draw-line {
   100% {
     stroke-dashoffset: 0;
@@ -2436,8 +2476,19 @@ a {
   display: flex;
 }
 
-.partnership__item:not(:last-child) {
+.partnership__item--1 {
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  opacity: 0;
   margin-right: 40px;
+}
+
+.partnership__item--2 {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  opacity: 0;
 }
 
 .partnership__logo {
@@ -2481,6 +2532,7 @@ a {
   height: 443px;
   margin: 17px 0 77px;
   padding: 36px 15px 17px;
+  z-index: 1;
 }
 
 .schema::after {
@@ -2490,8 +2542,8 @@ a {
   left: 0;
   width: 0;
   height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#000000), color-stop(38%, #000000), color-stop(38%, #222222), color-stop(96%, #222222), color-stop(96%, #000000), to(#000000));
-  background: linear-gradient(0deg, #000000 0%, #000000 38%, #222222 38%, #222222 96%, #000000 96%, #000000 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), color-stop(38%, rgba(255, 255, 255, 0)), color-stop(38%, #222222), color-stop(96%, #222222), color-stop(96%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 38%, #222222 38%, #222222 96%, rgba(255, 255, 255, 0) 96%, rgba(255, 255, 255, 0) 100%);
 }
 
 .schema__block {
@@ -2859,6 +2911,10 @@ a {
   line-height: 1.2;
   max-width: 770px;
   margin-bottom: 82px;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  opacity: 0;
 }
 
 .feedback {
@@ -3617,73 +3673,77 @@ body:has(.static) .header__home-link {
 }
 
 .start.schema__icon--1 {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .start.schema__icon--2 {
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
 
 .start.schema__icon--3 {
-  -webkit-animation-delay: 10s;
-  animation-delay: 10s;
+  -webkit-animation-delay: 4.5s;
+  animation-delay: 4.5s;
 }
 
 .start.schema__icon--4 {
-  -webkit-animation-delay: 13s;
-  animation-delay: 13s;
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
 }
 
 .start.schema__text-title {
   -webkit-animation: slide-down-fade-in 0.5s forwards;
   animation: slide-down-fade-in 0.5s forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 .start.schema__text-title--1 {
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 
 .start.schema__text-title--2 {
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
 }
 
 .start.schema__text-title--3 {
-  -webkit-animation-delay: 11s;
-  animation-delay: 11s;
+  -webkit-animation-delay: 4.8s;
+  animation-delay: 4.8s;
 }
 
 .start.schema__text-title--4 {
-  -webkit-animation-delay: 14s;
-  animation-delay: 14s;
+  -webkit-animation-delay: 6.3s;
+  animation-delay: 6.3s;
 }
 
 .start.schema__text-descr {
   -webkit-animation: slide-down-fade-in 0.2s forwards;
   animation: slide-down-fade-in 0.2s forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 .start.schema__text-descr--1 {
-  -webkit-animation-delay: 2.5s;
-  animation-delay: 2.5s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .start.schema__text-descr--2 {
-  -webkit-animation-delay: 5.5s;
-  animation-delay: 5.5s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 .start.schema__text-descr--3 {
-  -webkit-animation-delay: 11.5s;
-  animation-delay: 11.5s;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
 }
 
 .start.schema__text-descr--4 {
-  -webkit-animation-delay: 14.5s;
-  animation-delay: 14.5s;
+  -webkit-animation-delay: 6.5s;
+  animation-delay: 6.5s;
 }
 
 .start.schema__frame--1::after,
@@ -3694,68 +3754,72 @@ body:has(.static) .header__home-link {
 }
 
 .start.schema__frame--1::after {
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .start.schema__frame--2::after {
-  -webkit-animation-delay: 9s;
-  animation-delay: 9s;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
 }
 
 .start.schema__frame--3::after {
-  -webkit-animation-delay: 12s;
-  animation-delay: 12s;
+  -webkit-animation-delay: 5.5s;
+  animation-delay: 5.5s;
 }
 
 .start.schema__bottom-left {
   -webkit-animation: show 1s forwards;
   animation: show 1s forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 .start.schema__bottom-left--1 {
-  -webkit-animation-delay: 7s;
-  animation-delay: 7s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
 }
 
 .start.schema__bottom-left--2 {
-  -webkit-animation-delay: 16s;
-  animation-delay: 16s;
+  -webkit-animation-delay: 7.5s;
+  animation-delay: 7.5s;
 }
 
 .start.schema__bottom-right {
   -webkit-animation: slide-right-fade-in 1s forwards;
   animation: slide-right-fade-in 1s forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 .start.schema__bottom-right--1 {
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+
+.start.schema__bottom-right--2 {
   -webkit-animation-delay: 8s;
   animation-delay: 8s;
 }
 
-.start.schema__bottom-right--2 {
-  -webkit-animation-delay: 17s;
-  animation-delay: 17s;
-}
-
 .start.schema__svg .path-1 {
-  -webkit-animation: draw-line 1s linear 6s forwards;
-  animation: draw-line 1s linear 6s forwards;
+  -webkit-animation: draw-line 1s linear 2.5s forwards;
+  animation: draw-line 1s linear 2.5s forwards;
 }
 
 .start.schema__svg .path-2 {
-  -webkit-animation: fade-in 1s linear 6s forwards;
-  animation: fade-in 1s linear 6s forwards;
+  -webkit-animation: fade-in 1s linear 2.5s forwards;
+  animation: fade-in 1s linear 2.5s forwards;
 }
 
 .start.schema__svg .path-3 {
-  -webkit-animation: draw-line 1s linear 15s forwards;
-  animation: draw-line 1s linear 15s forwards;
+  -webkit-animation: draw-line 1s linear 7s forwards;
+  animation: draw-line 1s linear 7s forwards;
 }
 
 .start.schema__svg .path-4 {
-  -webkit-animation: fade-in 1s linear 15s forwards;
-  animation: fade-in 1s linear 15s forwards;
+  -webkit-animation: fade-in 1s linear 7s forwards;
+  animation: fade-in 1s linear 7s forwards;
 }
 
 .start.chart .chart__item {
@@ -3763,24 +3827,24 @@ body:has(.static) .header__home-link {
   animation: chart-slide-right 0.3s forwards;
 }
 
-.start.chart .chart__item-- {
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-}
-
-.start.chart .chart__item--2 {
+.start.chart .chart__item--1 {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
 
+.start.chart .chart__item--2 {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
 .start.chart .chart__item--3 {
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
+  -webkit-animation-delay: 2.8s;
+  animation-delay: 2.8s;
 }
 
 .start.chart .chart__item--4 {
-  -webkit-animation-delay: 6s;
-  animation-delay: 6s;
+  -webkit-animation-delay: 3.7s;
+  animation-delay: 3.7s;
 }
 
 .start.chart .chart__bubble--1 {
@@ -3793,34 +3857,36 @@ body:has(.static) .header__home-link {
 .start.chart .chart__bubble--2 {
   -webkit-animation: chart-fade-in 0.7s forwards;
   animation: chart-fade-in 0.7s forwards;
-  -webkit-animation-delay: 3.5s;
-  animation-delay: 3.5s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
 }
 
 .start.chart .chart__bubble--3::before {
   -webkit-animation: show 0.5s forwards;
   animation: show 0.5s forwards;
-  -webkit-animation-delay: 4.9s;
-  animation-delay: 4.9s;
+  -webkit-animation-delay: 4.3s;
+  animation-delay: 4.3s;
 }
 
 .start.chart .chart__bubble--3::after {
-  -webkit-animation: chart-stretch 0.7s forwards;
-  animation: chart-stretch 0.7s forwards;
-  -webkit-animation-delay: 4.2s;
-  animation-delay: 4.2s;
+  -webkit-animation: chart-stretch 0.5s forwards;
+  animation: chart-stretch 0.5s forwards;
+  -webkit-animation-delay: 3.7s;
+  animation-delay: 3.7s;
 }
 
 .start.chart .chart__bubble--4 {
   -webkit-animation: chart-fade-in 0.7s forwards;
   animation: chart-fade-in 0.7s forwards;
-  -webkit-animation-delay: 6.5s;
-  animation-delay: 6.5s;
+  -webkit-animation-delay: 4.4s;
+  animation-delay: 4.4s;
 }
 
 .start.section__subtitle {
   -webkit-animation: slide-up 0.6s forwards;
   animation: slide-up 0.6s forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
@@ -3828,21 +3894,23 @@ body:has(.static) .header__home-link {
 .start.section__title {
   -webkit-animation: slide-up 0.6s forwards;
   animation: slide-up 0.6s forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
   -webkit-animation-delay: 0.1s;
   animation-delay: 0.1s;
 }
 
-.start.offer__item--1 {
+.start.offer__list .offer__item--1 {
   -webkit-animation: slide-right 0.6s forwards;
   animation: slide-right 0.6s forwards;
 }
 
-.start.offer__item--2 {
+.start.offer__list .offer__item--2 {
   -webkit-animation: slide-up 0.6s forwards;
   animation: slide-up 0.6s forwards;
 }
 
-.start.offer__item--3 {
+.start.offer__list .offer__item--3 {
   -webkit-animation: slide-left 0.6s forwards;
   animation: slide-left 0.6s forwards;
 }
@@ -3859,17 +3927,17 @@ body:has(.static) .header__home-link {
   animation-delay: 0.5s;
 }
 
-.start.why__statistics-item--1 {
+.start.why__statistics-list .why__statistics-item--1 {
   -webkit-animation: slide-right 0.6s forwards;
   animation: slide-right 0.6s forwards;
 }
 
-.start.why__statistics-item--2 {
+.start.why__statistics-list .why__statistics-item--2 {
   -webkit-animation: slide-up 0.6s forwards;
   animation: slide-up 0.6s forwards;
 }
 
-.start.why__statistics-item--3 {
+.start.why__statistics-list .why__statistics-item--3 {
   -webkit-animation: slide-left 0.6s forwards;
   animation: slide-left 0.6s forwards;
 }
@@ -3884,11 +3952,15 @@ body:has(.static) .header__home-link {
 .start.solution__item--1 {
   -webkit-animation: slide-left 0.6s forwards;
   animation: slide-left 0.6s forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 .start.solution__item--2 {
   -webkit-animation: slide-left 0.6s forwards;
   animation: slide-left 0.6s forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
@@ -3896,6 +3968,8 @@ body:has(.static) .header__home-link {
 .start.solution__item--3 {
   -webkit-animation: slide-left 0.6s forwards;
   animation: slide-left 0.6s forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
@@ -3951,6 +4025,23 @@ body:has(.static) .header__home-link {
   animation: slide-left 0.6s forwards;
 }
 
+.start.contacts__description {
+  -webkit-animation: slide-up 0.6s forwards;
+  animation: slide-up 0.6s forwards;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.start.partnership__list .partnership__item--1 {
+  -webkit-animation: slide-right 0.6s forwards;
+  animation: slide-right 0.6s forwards;
+}
+
+.start.partnership__list .partnership__item--2 {
+  -webkit-animation: slide-left 0.6s forwards;
+  animation: slide-left 0.6s forwards;
+}
+
 @media (max-width: 1279px) {
   #to-top-btn {
     width: 40px;
@@ -3989,22 +4080,28 @@ body:has(.static) .header__home-link {
   .schema__block {
     padding: 10px;
     border: 2px dashed #01e4db;
+    border-color: rgba(255, 255, 255, 0);
     border-radius: 20px;
     width: auto;
     gap: 40px;
   }
 
   .schema__block--2 {
-    border-color: #b58426;
+    border-color: rgba(255, 255, 255, 0);
+  }
+
+  .schema__border {
+    display: none;
   }
 
   .schema__border svg {
-    display: none;
+    -webkit-animation: none;
+    animation: none;
   }
 
   .schema__frame--1::after,
   .schema__frame--3::after {
-    right: 0;
+    right: -20px;
   }
 
   .schema__frame--2 {
@@ -4041,6 +4138,20 @@ body:has(.static) .header__home-link {
 
   .team__item {
     min-height: auto;
+  }
+
+  .start.schema__block--1 {
+    -webkit-animation: border-color-1 2s forwards;
+    animation: border-color-1 2s forwards;
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+  }
+
+  .start.schema__block--2 {
+    -webkit-animation: border-color-2 2s forwards;
+    animation: border-color-2 2s forwards;
+    -webkit-animation-delay: 7s;
+    animation-delay: 7s;
   }
 }
 
@@ -4589,6 +4700,8 @@ body:has(.static) .header__home-link {
   .start.chart .chart__item {
     -webkit-animation: chart-slide-down 0.3s forwards;
     animation: chart-slide-down 0.3s forwards;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
   }
 
   .start.chart .chart__bubble--1 {
@@ -4617,6 +4730,11 @@ body:has(.static) .header__home-link {
     animation: chart-slide-right 0.5s forwards;
     -webkit-animation-delay: 6.5s;
     animation-delay: 6.5s;
+  }
+
+  .start.section__title {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
   }
 }
 
@@ -4865,7 +4983,7 @@ body:has(.static) .header__home-link {
     flex-direction: column;
   }
 
-  .partnership__item:not(:last-child) {
+  .partnership__item--1 {
     margin-right: 0;
     margin-bottom: 29px;
   }
@@ -5205,6 +5323,62 @@ body:has(.static) .header__home-link {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .start.offer__list .offer__item--2 {
+    -webkit-animation: slide-right 0.6s forwards;
+    animation: slide-right 0.6s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+
+  .start.offer__list .offer__item--3 {
+    -webkit-animation: slide-right 0.6s forwards;
+    animation: slide-right 0.6s forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+
+  .start.why__statistics-list .why__statistics-item--2 {
+    -webkit-animation: slide-right 0.6s forwards;
+    animation: slide-right 0.6s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+
+  .start.why__statistics-list .why__statistics-item--3 {
+    -webkit-animation: slide-right 0.6s forwards;
+    animation: slide-right 0.6s forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+
+  .start.values__item--1 {
+    -webkit-animation: slide-right 0.6s forwards;
+    animation: slide-right 0.6s forwards;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+  }
+
+  .start.values__item--2 {
+    -webkit-animation: slide-right 0.6s forwards;
+    animation: slide-right 0.6s forwards;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+  }
+
+  .start.values__item--3 {
+    -webkit-animation: slide-right 0.6s forwards;
+    animation: slide-right 0.6s forwards;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+  }
+
+  .start.values__item--4 {
+    -webkit-animation: slide-right 0.6s forwards;
+    animation: slide-right 0.6s forwards;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
   }
 }
 
