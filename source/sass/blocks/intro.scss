@@ -218,7 +218,7 @@
 }
 
 .intro__advantages-btn {
-  @include font-settings($ff-tilda, 900, 24px, 1.2);
+  @include font-settings($ff-tilda, 900, 20px, 1.2);
   text-transform: uppercase;
   padding: 12px 24px;
   position: relative;

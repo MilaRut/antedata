@@ -115,7 +115,7 @@
 }
 
 .solution__btn {
-  @include font-settings($ff-tilda, 900, 24px, 1.2);
+  @include font-settings($ff-tilda, 900, 20px, 1.2);
   text-transform: uppercase;
   padding: 13px 24px;
   transition: background-color $trans-default;

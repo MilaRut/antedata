@@ -1659,7 +1659,7 @@ a {
   font-family: "TildaSans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.2;
   text-transform: uppercase;
   padding: 12px 24px;
@@ -2430,7 +2430,7 @@ a {
   font-family: "TildaSans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.2;
   text-transform: uppercase;
   padding: 13px 24px;
@@ -2857,6 +2857,14 @@ a {
   max-width: 500px;
   min-height: 233px;
   padding: 32px 50px;
+}
+
+.team__photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 24px;
 }
 
 .team__name {

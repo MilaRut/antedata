@@ -62,6 +62,14 @@
   }
 }
 
+.team__photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 24px;
+}
+
 .team__name {
   @include font-settings($ff-bahn, 600, 32px, 1.2);
   text-transform: uppercase;
