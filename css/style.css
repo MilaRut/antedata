@@ -2908,7 +2908,7 @@ a {
   font-family: "TildaSans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 1;
   color: #000000;
   text-transform: uppercase;
@@ -3067,12 +3067,13 @@ a {
 }
 
 .feedback__form-title {
-  font-family: "TildaSans", "Arial", sans-serif;
+  font-family: "Bahnschrift", "Arial", sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
+  font-weight: 600;
+  font-size: 32px;
   line-height: 1.2;
   margin-bottom: 32px;
+  text-transform: uppercase;
 }
 
 .feedback__form {
@@ -3258,7 +3259,7 @@ a {
   font-family: "TildaSans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 1.3;
 }
 
