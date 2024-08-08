@@ -2572,6 +2572,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   max-width: 213px;
+  opacity: 0;
 }
 
 .schema__frame--1::after,
@@ -2607,7 +2608,6 @@ a {
   width: 75px;
   height: 75px;
   margin-bottom: 17px;
-  opacity: 0;
 }
 
 .schema__text .schema__text-title {
@@ -2618,10 +2618,6 @@ a {
   line-height: 1;
   text-transform: uppercase;
   margin-bottom: 9px;
-  opacity: 0;
-  -webkit-transform: translateY(-50px);
-  -ms-transform: translateY(-50px);
-  transform: translateY(-50px);
 }
 
 .schema__text .schema__text-descr {
@@ -2630,10 +2626,6 @@ a {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.2;
-  opacity: 0;
-  -webkit-transform: translateY(-50px);
-  -ms-transform: translateY(-50px);
-  transform: translateY(-50px);
 }
 
 .schema__bottom-right {
@@ -3676,159 +3668,109 @@ a {
   animation: stretch-right 0.5s forwards;
 }
 
-.start.schema__icon {
-  -webkit-animation: show 0.5s forwards;
-  animation: show 0.5s forwards;
-}
-
-.start.schema__icon--1 {
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-}
-
-.start.schema__icon--2 {
-  -webkit-animation-delay: 1.5s;
-  animation-delay: 1.5s;
-}
-
-.start.schema__icon--3 {
-  -webkit-animation-delay: 4.5s;
-  animation-delay: 4.5s;
-}
-
-.start.schema__icon--4 {
-  -webkit-animation-delay: 6s;
-  animation-delay: 6s;
-}
-
-.start.schema__text-title {
-  -webkit-animation: slide-down-fade-in 0.5s forwards;
-  animation: slide-down-fade-in 0.5s forwards;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
-
-.start.schema__text-title--1 {
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-}
-
-.start.schema__text-title--2 {
-  -webkit-animation-delay: 1.8s;
-  animation-delay: 1.8s;
-}
-
-.start.schema__text-title--3 {
-  -webkit-animation-delay: 4.8s;
-  animation-delay: 4.8s;
-}
-
-.start.schema__text-title--4 {
-  -webkit-animation-delay: 6.3s;
-  animation-delay: 6.3s;
-}
-
-.start.schema__text-descr {
-  -webkit-animation: slide-down-fade-in 0.2s forwards;
-  animation: slide-down-fade-in 0.2s forwards;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
-
-.start.schema__text-descr--1 {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-
-.start.schema__text-descr--2 {
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-}
-
-.start.schema__text-descr--3 {
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
-}
-
-.start.schema__text-descr--4 {
-  -webkit-animation-delay: 6.5s;
-  animation-delay: 6.5s;
+.start.schema__frame--1,
+.start.schema__frame--2,
+.start.schema__frame--3,
+.start.schema__frame--4 {
+  -webkit-animation: show 0.3s forwards;
+  animation: show 0.3s forwards;
 }
 
 .start.schema__frame--1::after,
 .start.schema__frame--2::after,
-.start.schema__frame--3::after {
-  -webkit-animation: slide-right-fade-in 1s forwards;
-  animation: slide-right-fade-in 1s forwards;
+.start.schema__frame--3::after,
+.start.schema__frame--4::after {
+  -webkit-animation: slide-right-fade-in 0.3s forwards;
+  animation: slide-right-fade-in 0.3s forwards;
 }
 
-.start.schema__frame--1::after {
+.start.schema__frame--1 {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
 
+.start.schema__frame--1::after {
+  -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+}
+
+.start.schema__frame--2 {
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+
 .start.schema__frame--2::after {
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
+  -webkit-animation-delay: 1.9s;
+  animation-delay: 1.9s;
+}
+
+.start.schema__frame--3 {
+  -webkit-animation-delay: 2.2s;
+  animation-delay: 2.2s;
 }
 
 .start.schema__frame--3::after {
-  -webkit-animation-delay: 5.5s;
-  animation-delay: 5.5s;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+.start.schema__frame--4 {
+  -webkit-animation-delay: 2.7s;
+  animation-delay: 2.7s;
+}
+
+.start.schema__svg .path-1 {
+  -webkit-animation: draw-line 0.6s linear 3s forwards;
+  animation: draw-line 0.6s linear 3s forwards;
+}
+
+.start.schema__svg .path-2 {
+  -webkit-animation: fade-in 0.6s linear 3s forwards;
+  animation: fade-in 0.6s linear 3s forwards;
+}
+
+.start.schema__svg .path-3 {
+  -webkit-animation: draw-line 0.6s linear 3.9s forwards;
+  animation: draw-line 0.6s linear 3.9s forwards;
+}
+
+.start.schema__svg .path-4 {
+  -webkit-animation: fade-in 0.6s linear 3.9s forwards;
+  animation: fade-in 0.6s linear 3.9s forwards;
 }
 
 .start.schema__bottom-left {
-  -webkit-animation: show 1s forwards;
-  animation: show 1s forwards;
+  -webkit-animation: show 0.3s forwards;
+  animation: show 0.3s forwards;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
 }
 
 .start.schema__bottom-left--1 {
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
+  -webkit-animation-delay: 3.3s;
+  animation-delay: 3.3s;
 }
 
 .start.schema__bottom-left--2 {
-  -webkit-animation-delay: 7.5s;
-  animation-delay: 7.5s;
+  -webkit-animation-delay: 4.2s;
+  animation-delay: 4.2s;
 }
 
 .start.schema__bottom-right {
-  -webkit-animation: slide-right-fade-in 1s forwards;
-  animation: slide-right-fade-in 1s forwards;
+  -webkit-animation: slide-right-fade-in 0.3s forwards;
+  animation: slide-right-fade-in 0.3s forwards;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
 }
 
 .start.schema__bottom-right--1 {
-  -webkit-animation-delay: 3.5s;
-  animation-delay: 3.5s;
+  -webkit-animation-delay: 3.6s;
+  animation-delay: 3.6s;
 }
 
 .start.schema__bottom-right--2 {
-  -webkit-animation-delay: 8s;
-  animation-delay: 8s;
-}
-
-.start.schema__svg .path-1 {
-  -webkit-animation: draw-line 1s linear 2.5s forwards;
-  animation: draw-line 1s linear 2.5s forwards;
-}
-
-.start.schema__svg .path-2 {
-  -webkit-animation: fade-in 1s linear 2.5s forwards;
-  animation: fade-in 1s linear 2.5s forwards;
-}
-
-.start.schema__svg .path-3 {
-  -webkit-animation: draw-line 1s linear 7s forwards;
-  animation: draw-line 1s linear 7s forwards;
-}
-
-.start.schema__svg .path-4 {
-  -webkit-animation: fade-in 1s linear 7s forwards;
-  animation: fade-in 1s linear 7s forwards;
+  -webkit-animation-delay: 4.5s;
+  animation-delay: 4.5s;
 }
 
 .start.chart__list .chart__bubble--1::before {
@@ -4130,24 +4072,24 @@ a {
   }
 
   .start.schema__block--1 {
-    -webkit-animation: border-color-1 2s forwards;
-    animation: border-color-1 2s forwards;
-    -webkit-animation-delay: 2.5s;
-    animation-delay: 2.5s;
+    -webkit-animation: border-color-1 1s forwards;
+    animation: border-color-1 1s forwards;
+    -webkit-animation-delay: 1.9s;
+    animation-delay: 1.9s;
   }
 
   .start.schema__block--2 {
-    -webkit-animation: border-color-2 2s forwards;
-    animation: border-color-2 2s forwards;
-    -webkit-animation-delay: 7s;
-    animation-delay: 7s;
+    -webkit-animation: border-color-2 1s forwards;
+    animation: border-color-2 1s forwards;
+    -webkit-animation-delay: 3.9s;
+    animation-delay: 3.9s;
   }
 }
 
 @media (max-width: 1279px) and (max-width: 1023px) {
   .start.schema__block--2 {
-    -webkit-animation-delay: 6.5s;
-    animation-delay: 6.5s;
+    -webkit-animation-delay: 3.7s;
+    animation-delay: 3.7s;
   }
 }
 
@@ -4734,29 +4676,34 @@ a {
     margin-bottom: 14px;
   }
 
-  .start.schema__icon--3 {
-    -webkit-animation-delay: 5s;
-    animation-delay: 5s;
+  .start.schema__frame--3 {
+    -webkit-animation-delay: 3.1s;
+    animation-delay: 3.1s;
   }
 
-  .start.schema__text-title--3 {
-    -webkit-animation-delay: 5.8s;
-    animation-delay: 5.8s;
+  .start.schema__frame--4 {
+    -webkit-animation-delay: 3.4s;
+    animation-delay: 3.4s;
   }
 
-  .start.schema__text-descr--3 {
-    -webkit-animation-delay: 6s;
-    animation-delay: 6s;
+  .start.schema__bottom-left--1 {
+    -webkit-animation-delay: 2.2s;
+    animation-delay: 2.2s;
   }
 
   .start.schema__bottom-left--2 {
-    -webkit-animation-delay: 4s;
-    animation-delay: 4s;
+    -webkit-animation-delay: 2.4s;
+    animation-delay: 2.4s;
+  }
+
+  .start.schema__bottom-right--1 {
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
   }
 
   .start.schema__bottom-right--2 {
-    -webkit-animation-delay: 4.5s;
-    animation-delay: 4.5s;
+    -webkit-animation-delay: 2.7s;
+    animation-delay: 2.7s;
   }
 
   .start.chart__list .chart__bubble--1::before {
