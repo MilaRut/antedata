@@ -3776,8 +3776,8 @@ a {
 .start.chart__list .chart__bubble--1::before {
   -webkit-animation: bubble-show 1s ease forwards;
   animation: bubble-show 1s ease forwards;
-  -webkit-animation-delay: 2.2s;
-  animation-delay: 2.2s;
+  -webkit-animation-delay: 2.3s;
+  animation-delay: 2.3s;
 }
 
 .start.chart__list .chart__bubble--3::before {
