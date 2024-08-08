@@ -101,25 +101,6 @@
   }
 }
 
-main {
-  position: relative;
-
-  &::after {
-    position: fixed;
-    content: "";
-    top: 0;
-    left: 50%;
-    width: 942px;
-    height: 942px;
-    background: url("../img/intro-grad.png") center no-repeat;
-    pointer-events: none;
-
-    @include vp-1023 {
-      display: none;
-    }
-  }
-}
-
 .mb-15 {
   margin-bottom: 15px;
 }

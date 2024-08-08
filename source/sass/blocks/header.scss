@@ -1,6 +1,5 @@
 .header {
   position: fixed;
-  background-color: $color-default-black;
   height: 152px;
   padding: 30px 0;
   z-index: 1000;
@@ -24,6 +23,7 @@
 }
 
 .header:has(.header__logo-wrapper.is-scrolled) {
+  background-color: $color-default-black;
   height: 102px;
 
   @include vp-1023 {
@@ -247,8 +247,4 @@
       }
     }
   }
-}
-
-.header__home-link {
-  display: none;
 }

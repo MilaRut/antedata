@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Описание проекта">
   <title>Antedata</title>
-  <link rel="stylesheet" href="css/style.min.css?v=190620241">
+  <link rel="stylesheet" href="css/style.min.css?v=16072024">
 </head>
 
 <body>
@@ -47,11 +47,6 @@
             </li>
           </ul>
         </nav>
-        <a href="index.html" class="header__home-link">
-          <svg width="48" height="48">
-            <use xlink:href="./img/sprite.svg#icon-close"></use>
-          </svg>
-        </a>
       </div>
     </header>
     <main class="main-page">
@@ -59,8 +54,10 @@
         <h1 class="visually-hidden">Antedata - altenative data investments</h1>
         <div class="container">
           <div class="intro__heading">
-            <p class="intro__text semilight-condensed">Upgrade Your Portfolio <br>with our <span
-                class="accent">Unique&nbsp;Strategy</span></p>
+            <div class="intro__text semilight-condensed">
+              <p>Upgrade Your Portfolio <br>with our <span>Unique&nbsp;Strategy</span>
+              </p>
+            </div>
             <div class="boxes">
               <div class="boxes-wrapper">
                 <div class="box box--1">
@@ -118,25 +115,19 @@
           <div class="intro__advantages">
             <ul class="intro__advantages-list list-reset">
               <li class="intro__advantages-item">
-                <p>We extract
-                  <span class="accent semibold-condensed">unique data </span>
-                  about software coding activity
+                <p>We extract <span>unique data</span> about software coding activity
                 </p>
                 <span class="intro__advantages-decor intro__advantages-decor--bottom"></span>
               </li>
               <li class="intro__advantages-item">
                 <span class="intro__advantages-decor intro__advantages-decor--top"></span>
-                <p>You receive
-                  <span class="accent semibold-condensed">actionable market insights </span>
-                  about IT stocks
+                <p>You receive <span>actionable market insights</span> about IT stocks
                 </p>
                 <span class="intro__advantages-decor intro__advantages-decor--bottom"></span>
               </li>
               <li class="intro__advantages-item">
                 <span class="intro__advantages-decor intro__advantages-decor--top"></span>
-                <p>You achieve
-                  <span class="accent semibold-condensed">exceptional investment performance </span>
-                  in the stock market
+                <p>You achieve <span>exceptional investment performance</span> in the stock market
                 </p>
                 <span class="intro__advantages-decor intro__advantages-decor--bottom"></span>
               </li>
@@ -152,7 +143,7 @@
           <ul class="offer__list list-reset" animate>
             <li class="offer__item offer__item--1">
               <h3 class="offer__item-title semibold-condensed accent">high uncorrelated returns</h3>
-              <p class="offer__item-text">Potential return <span class="accent">40%</span> after fees (not guaranteed)
+              <p class="offer__item-text">Potential return <span>40%</span> after fees (not guaranteed)
               </p>
               <p class="offer__item-text">Low correlation to the stock market</p>
             </li>
@@ -182,36 +173,49 @@
               publications and stock price movements.</p>
             <p class="why__description-text">Buying and integrating software is usually a long process that can be
               traced early on public platforms.</p>
-            <p class="why__description-text">We extract coding activity data that covers <span class="accent">over 100
-                companies</span>, <span class="accent">5&nbsp;sources</span>&nbsp;and&nbsp;<span
-                class="accent">6&nbsp;years of
+            <p class="why__description-text">We extract coding activity data that covers <span>over 100
+                companies</span>, <span>5&nbsp;sources</span>&nbsp;and&nbsp;<span>6&nbsp;years of
                 history</span>.</p>
           </div>
-          <div class="why__chart chart" animate>
-            <ul class="chart__list list-reset">
-              <li class="chart__item chart__item--1" animate>
+
+          <div class="why__chart chart">
+            <ul class="chart__list list-reset" animate>
+              <li class="chart__item chart__item--1">
                 <p class="chart__text condensed">Requirement
                   <span>of Customer</span>
                 </p>
+                <span class="blue-bg blue-bg--1"></span>
               </li>
-              <li class="chart__item chart__item--2" animate>
+              <li class="chart__item chart2__item--2">
                 <p class="chart__text condensed">Software Evaluation
                   <span>by Software Customer</span>
                 </p>
-                <span class="chart__bubble chart__bubble--1" animate>Digital footprint of customers</span>
+
+                <div class="chart__bubble chart__bubble--1">
+                  <span class="bubble-text">Digital footprint</span>
+                  <span class="bubble-helper"></span>
+                </div>
+                <span class="blue-bg blue-bg--2"></span>
               </li>
-              <li class="chart__item chart__item--3" animate>
+              <li class="chart__item chart__item--3">
                 <p class="chart__text condensed">Software Integration
                   <span>by Programmer</span>
                 </p>
-                <span class="chart__bubble chart__bubble--2" animate>Digital footprint of Programmers</span>
-                <span class="chart__bubble chart__bubble--3 condensed" animate></span>
+
+                <div class="chart__bubble chart__bubble--3 condensed" animate>
+                  <span class="bubble-text">Our&nbsp;forecast</span>
+                </div>
+                <span class="blue-bg blue-bg--3" animate></span>
               </li>
-              <li class="chart__item chart__item--4" animate>
+              <li class="chart__item chart__item--4">
                 <p class="chart__text condensed">Production
                   <span>by Software Company</span>
                 </p>
-                <span class="chart__bubble chart__bubble--4" animate>Earnings Release</span>
+
+                <div class="chart__bubble chart__bubble--4" animate>
+                  <span class="bubble-text">Earnings Release</span>
+                </div>
+                <span class="blue-bg blue-bg--4" animate></span>
               </li>
             </ul>
           </div>
@@ -223,10 +227,9 @@
           <h2 class="section__title semilight-condensed mb-51" animate>PERFORMANCE OF STRATEGY</h2>
           <div class="why__description" animate>
             <p class="why__description-title accent">Proven Success</p>
-            <p class="why__description-text">With a live trading account boasting <span class="accent">more than
+            <p class="why__description-text">With a live trading account boasting <span>more than
                 40%</span> annual return since inception in February 2023, our strategies have consistently
               outperformed, validated both by rigorous backtesting and real-world implementation.</p>
-
           </div>
           <figure class="why__image" animate>
             <picture>
@@ -272,9 +275,8 @@
         <div class="container">
           <h2 class="section__title semilight-condensed mb-25" animate>Choose your solution</h2>
           <p class="solution__description" animate>Elevate your investment strategy with our trading signals, derived
-            from our
-            exclusive alternative data sources. Gain early insight into market movements and company performances,
-            enabling enhanced portfolio returns.</p>
+            from our exclusive alternative data sources. Gain early insight into market movements and company
+            performances, enabling enhanced portfolio returns.</p>
           <ul class="solution__list list-reset">
             <li class="solution__item solution__item--1" animate>
               <h3 class="solution__item-title semibold-condensed accent">Managed Account</h3>
@@ -314,25 +316,24 @@
               </div>
               <div class="schema__row schema__row--top">
                 <div class="schema__frame schema__frame--1" animate>
-                  <div class="schema__icon schema__icon--1" animate>
+                  <div class="schema__icon schema__icon--1">
                     <img src="./img/svg/schema-icon-1.svg" width="75" height="75" alt="">
                   </div>
                   <div class="schema__text schema__text--1">
-                    <p class="schema__text-title schema__text-title--1 semibold-condensed accent" animate>AnteData
+                    <p class="schema__text-title schema__text-title--1 semibold-condensed accent">AnteData
                       Program</p>
-                    <p class="schema__text-descr schema__text-descr--1" animate>Measures activity on web platforms.
-                      Calculates trends and
-                      signals.</p>
+                    <p class="schema__text-descr schema__text-descr--1">Measures activity on web platforms.
+                      Calculates trends and signals.</p>
                   </div>
                 </div>
                 <div class="schema__frame schema__frame--2" animate>
-                  <div class="schema__icon schema__icon--2" animate>
+                  <div class="schema__icon schema__icon--2">
                     <img src="./img/svg/schema-icon-2.svg" width="75" height="75" alt="">
                   </div>
                   <div class="schema__text schema__text--2">
-                    <p class="schema__text-title schema__text-title--2 semibold-condensed accent" animate>Financial
+                    <p class="schema__text-title schema__text-title--2 semibold-condensed accent">Financial
                       Engineer</p>
-                    <p class="schema__text-descr schema__text-descr--2" animate>Reviews Signals. <br>Controls Data
+                    <p class="schema__text-descr schema__text-descr--2">Reviews Signals. <br>Controls Data
                       Quality.</p>
                   </div>
                 </div>
@@ -363,25 +364,25 @@
               </div>
               <div class="schema__row schema__row--top">
                 <div class="schema__frame schema__frame--3" animate>
-                  <div class="schema__icon schema__icon--3" animate>
+                  <div class="schema__icon schema__icon--3">
                     <img src="./img/svg/schema-icon-3.svg" width="75" height="75" alt="">
                   </div>
                   <div class="schema__text schema__text--3">
-                    <p class="schema__text-title schema__text-title--3 semibold-condensed accent" animate>Portfolio
+                    <p class="schema__text-title schema__text-title--3 semibold-condensed accent">Portfolio
                       Manager</p>
-                    <p class="schema__text-descr schema__text-descr--3" animate>Qualitative Review. Sizing trades to
+                    <p class="schema__text-descr schema__text-descr--3">Qualitative Review. Sizing trades to
                       optimize Risk and Diversification
                     </p>
                   </div>
                 </div>
                 <div class="schema__frame schema__frame--4" animate>
-                  <div class="schema__icon schema__icon--4" animate>
+                  <div class="schema__icon schema__icon--4">
                     <img src="./img/svg/schema-icon-4.svg" width="75" height="75" alt="">
                   </div>
                   <div class="schema__text schema__text--4">
-                    <p class="schema__text-title schema__text-title--4 semibold-condensed accent" animate>Trading
+                    <p class="schema__text-title schema__text-title--4 semibold-condensed accent">Trading
                       Account</p>
-                    <p class="schema__text-descr schema__text-descr--4" animate>Observing guidelines. <br>Efficient
+                    <p class="schema__text-descr schema__text-descr--4">Observing guidelines. <br>Efficient
                       trading</p>
                   </div>
                 </div>
@@ -464,14 +465,14 @@
         <div class="container">
           <h2 class="section__title semilight-condensed mb-51" animate>A TEAM OF SEASONED PROFESSIONALS</h2>
           <p class="team__description" animate>Our dynamic team brings together a wealth of experience, insight, and
-            innovation,
-            driven by an entrepreneurial spirit, meticulous implementation and a deep understanding of the markets.</p>
+            innovation, driven by an entrepreneurial spirit, meticulous implementation and a deep understanding of the
+            markets.</p>
           <ul class="team__list list-reset" animate>
             <li class="team__item">
-              <div class="team__photo" style="display: none;">
+              <div class="team__photo">
                 <img src="./img/team-florian.jpg" width="200" height="200" loading="lazy" alt="Florian.">
               </div>
-              <p class="team__name semibold-condensed accent">Florian</p>
+              <p class="team__name semibold-condensed accent">Florian Boehringer</p>
               <p class="team__position">Investment Professional</p>
               <p class="team__text">Over 20 years portfolio management at leading Swiss asset management companies.</p>
               <p class="team__text">Experience which includes large pension funds and development of quantitative
@@ -479,31 +480,31 @@
               <p class="team__text">Pioneer in using alternative data models.</p>
             </li>
             <li class="team__item">
-              <div class="team__photo" style="display: none;">
+              <div class="team__photo">
+                <img src="./img/team-viktor.jpg" width="200" height="200" loading="lazy" alt="Florian.">
+              </div>
+              <p class="team__name semibold-condensed accent">Viktor Karepin</p>
+              <p class="team__position">Data Analysis Expert</p>
+              <p class="team__text">In-depth experience in the IT Industry and Computational Social Science.</p>
+            </li>
+            <li class="team__item">
+              <div class="team__photo">
                 <img src="./img/team-david.jpg" width="200" height="200" loading="lazy" alt="Florian.">
               </div>
-              <p class="team__name semibold-condensed accent">David</p>
+              <p class="team__name semibold-condensed accent">David Elkind</p>
               <p class="team__position">IT Leader</p>
               <p class="team__text">Over 25 years in a leading US software company.</p>
               <p class="team__text">M.Sc. with honors in computer sciences, focusing on data science and machine
                 learning.</p>
             </li>
             <li class="team__item">
-              <div class="team__photo" style="display: none;">
+              <div class="team__photo">
                 <img src="./img/team-rafail.jpg" width="200" height="200" loading="lazy" alt="Florian.">
               </div>
-              <p class="team__name semibold-condensed accent">Rafail</p>
+              <p class="team__name semibold-condensed accent">Rafail Aliev</p>
               <p class="team__position">Serial Entrepreneur</p>
               <p class="team__text">Over 20 years of sales and marketing in the field of IT staffing and b2b services.
               </p>
-            </li>
-            <li class="team__item">
-              <div class="team__photo" style="display: none;">
-                <img src="./img/team-viktor.jpg" width="200" height="200" loading="lazy" alt="Florian.">
-              </div>
-              <p class="team__name semibold-condensed accent">Viktor</p>
-              <p class="team__position">Data Analysis Expert</p>
-              <p class="team__text">In-depth experience in the IT Industry and Computational Social Science.</p>
             </li>
           </ul>
         </div>
@@ -516,6 +517,13 @@
             expert team
             for a detailed consultation on how our unique insights and bespoke strategies can help you improve your
             financial performance.</p>
+          <a href="https://calendar.app.google/8pg6HDoLHJsbR5r18" class="contacts__book-link" target="_blank"
+            rel="noreferrer noopener nofollow">
+            <svg width="24" height="24" fill="currentColor">
+              <use xlink:href="./img/sprite.svg#calendar"></use>
+            </svg>
+            <span>Book a meeting</span>
+          </a>
           <div class="contacts__feedback feedback">
             <div class="feedback__contact-wrapper" animate>
               <div class="feedback__logo">
@@ -527,7 +535,7 @@
               <address class="feedback__address-wrapper">
                 <p class="feedback__address feedback__address--tel">
                   <span class="icon">
-                    <svg width="34" height="34">
+                    <svg width="36" height="36">
                       <use xlink:href="./img/sprite.svg#phone"></use>
                     </svg>
                   </span>
@@ -535,11 +543,11 @@
                 </p>
                 <p class="feedback__address feedback__address--address">
                   <span class="icon">
-                    <svg width="20" height="29">
+                    <svg width="36" height="36">
                       <use xlink:href="./img/sprite.svg#address"></use>
                     </svg>
                   </span>
-                  <a>Rebhaldenstrasse, 18 8002, Zürich</a>
+                  <a>Rebhaldenstrasse,&nbsp;18<br>8002, Zürich</a>
                 </p>
                 <p class="feedback__address feedback__address--email">
                   <span class="icon">
@@ -572,32 +580,28 @@
             </div>
             <div class="feedback__form" animate>
               <form action="">
-                <p class="feedback__form-title">Send us a message</p>
-                <label for="name">
-                  <input type="text" name="name" id="name" placeholder="*Your Name" form-el>
-                </label>
-                <label for="company">
-                  <input type="text" name="company" id="company" placeholder="*Company Name" form-el>
-                </label>
-                <label for="tel">
-                  <input type="tel" name="tel" id="tel" placeholder="*Your phone number" form-el>
-                </label>
-                <label for="email">
-                  <input type="email" name="email" id="email" placeholder="*Your email" form-el>
-                </label>
-                <textarea name="message" id="message" placeholder="*Write your message here" form-el></textarea>
+                <p class="feedback__form-title semibold-condensed accent">Send us a message</p>
+                <span>
+                  <input type="text" name="name" id="name" placeholder="*Your Name" class="form-el">
+                </span>
+                <span>
+                  <input type="text" name="company" id="company" placeholder="*Company Name" class="form-el">
+                </span>
+                <span>
+                  <input type="tel" name="tel" id="tel" placeholder="*Your phone number" class="form-el">
+                </span>
+                <span>
+                  <input type="email" name="email" id="email" placeholder="*Your email" class="form-el">
+                </span>
+                <span>
+                  <textarea name="message" id="message" placeholder="*Write your message here"
+                    class="form-el"></textarea>
+                </span>
                 <div class="feedback__agreement">
-                  <p>By clicking ‘Send’ you agree to our <a class="accent" href="terms.html">Terms Of Use</a> and <a
-                      class="accent" href="privacy.html">Privacy Policy</a></p>
+                  <p>By clicking ‘Send’ you agree to our <a class="accent" href="#" data-open-modal="terms">Terms Of
+                      Use</a> and <a class="accent" href="#" data-open-modal="privacy">Privacy Policy</a></p>
                 </div>
-                <button type="submit" class="btn feedback__form-submit">
-                  <span class="button-icon">
-                    <svg width="18" height="18" fill="currentColor">
-                      <use xlink:href="./img/sprite.svg#send"></use>
-                    </svg>
-                  </span>
-                  <span class="button-text">Send</span>
-                </button>
+                <input type="submit" class="btn feedback__form-submit" value="Send">
               </form>
             </div>
           </div>
@@ -608,8 +612,8 @@
       <div class="container">
         <p class="footer__copyright">© Copyright Antedata, 2024</p>
         <div class="footer__links">
-          <a class="footer__link accent" href="terms.html">Terms of Use</a>
-          <a class="footer__link accent" href="privacy.html">Privacy policy</a>
+          <a class="footer__link accent" href="#" data-open-modal="terms">Terms of Use</a>
+          <a class="footer__link accent" href="#" data-open-modal="privacy">Privacy policy</a>
         </div>
       </div>
     </footer>
@@ -738,6 +742,13 @@
             <p class="modal__title semibold-condensed">Contact us</p>
             <p class="modal__text">Reach out to our expert team for a detailed consultation on how our unique insights
               and bespoke strategies can help you improve your financial performance.</p>
+            <a href="https://calendar.app.google/8pg6HDoLHJsbR5r18" class="contacts__book-link" target="_blank"
+              rel="noreferrer noopener nofollow">
+              <svg width="24" height="24" fill="currentColor">
+                <use xlink:href="./img/sprite.svg#calendar"></use>
+              </svg>
+              <span>Book a meeting</span>
+            </a>
           </div>
           <div class="feedback__contact-wrapper">
             <div class="feedback__logo">
@@ -749,7 +760,7 @@
             <address class="feedback__address-wrapper">
               <p class="feedback__address feedback__address--tel">
                 <span class="icon">
-                  <svg width="34" height="34">
+                  <svg width="36" height="36">
                     <use xlink:href="./img/sprite.svg#phone"></use>
                   </svg>
                 </span>
@@ -757,11 +768,11 @@
               </p>
               <p class="feedback__address feedback__address--address">
                 <span class="icon">
-                  <svg width="20" height="29">
+                  <svg width="36" height="36">
                     <use xlink:href="./img/sprite.svg#address"></use>
                   </svg>
                 </span>
-                <a>Rebhaldenstrasse, 188002, Zürich</a>
+                <a>Rebhaldenstrasse,&nbsp;18<br>8002, Zürich</a>
               </p>
               <p class="feedback__address feedback__address--email">
                 <span class="icon">
@@ -794,32 +805,27 @@
           </div>
           <div class="feedback__form">
             <form action="">
-              <p class="feedback__form-title">Send us a message</p>
-              <label for="name">
-                <input type="text" name="name" id="name" placeholder="*Your Name" form-el>
-              </label>
-              <label for="company">
-                <input type="text" name="company" id="company" placeholder="*Company Name" form-el>
-              </label>
-              <label for="tel">
-                <input type="tel" name="tel" id="tel" placeholder="*Your phone number" form-el>
-              </label>
-              <label for="email">
-                <input type="email" name="email" id="email" placeholder="*Your email" form-el>
-              </label>
-              <textarea name="message" id="message" placeholder="*Write your message here" form-el></textarea>
+              <p class="feedback__form-title semibold-condensed accent">Send us a message</p>
+              <span>
+                <input type="text" name="name" id="name" placeholder="*Your Name" class="form-el">
+              </span>
+              <span>
+                <input type="text" name="company" id="company" placeholder="*Company Name" class="form-el">
+              </span>
+              <span>
+                <input type="tel" name="tel" id="tel" placeholder="*Your phone number" class="form-el">
+              </span>
+              <span>
+                <input type="email" name="email" id="email" placeholder="*Your email" class="form-el">
+              </span>
+              <span>
+                <textarea name="message" id="message" placeholder="*Write your message here" class="form-el"></textarea>
+              </span>
               <div class="feedback__agreement">
-                <p>By clicking ‘Send’ you agree to our <a class="accent" href="terms.html">Terms Of Use</a> and <a
-                    class="accent" href="privacy.html">Privacy Policy</a></p>
+                <p>By clicking ‘Send’ you agree to our <a class="accent" href="#" data-open-modal="terms">Terms Of
+                    Use</a> and <a class="accent" href="#" data-open-modal="privacy">Privacy Policy</a></p>
               </div>
-              <button type="submit" class="btn feedback__form-submit">
-                <span class="button-icon">
-                  <svg width="18" height="18">
-                    <use xlink:href="./img/sprite.svg#send"></use>
-                  </svg>
-                </span>
-                <span class="button-text">Send</span>
-              </button>
+              <input type="submit" class="btn feedback__form-submit" value="Send">
             </form>
           </div>
         </div>
@@ -832,8 +838,349 @@
     </div>
   </div>
 
+  <div class="modal modal--preload modal--fit-content modal--responsive modal--no-scale" id="privacy"
+    data-modal="privacy">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <section class="static static--privacy">
+          <div class="static__header">
+            <div class="static__logo">
+              <img src="./img/svg/logo-antedata.svg" width="157" height="32" alt="Antedata.">
+            </div>
+            <button class="modal__close-btn btn-reset" type="button" aria-label="Close popup" data-close-modal>
+              <svg width="48" height="48">
+                <use xlink:href="./img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="container">
+            <h1>Privacy Policy (Website)</h1>
+            <p>With this privacy policy, we inform you which personal data we process in connection with our activities
+              and activities, including our antedata.ch Website. In particular, we inform you for what, how and where we
+              process which personal data. We also inform about the rights of persons whose data we process.</p>
+            <p>For individual or additional activities and activities, further data protection declarations as well as
+              other legal documents such as General Terms and Conditions (GTC).</p>
+            <p>We are subject to Swiss data protection law as well as any applicable foreign data protection law, such
+              as
+              in particular that of the European Union (EU) with the General Data Protection Regulation (GDPR). The
+              European Commission recognises that Swiss data protection law guarantees adequate data protection.</p>
+            <p>In consideration of your use of the Service, you agree to provide true, accurate, current and complete
+              information about yourself as prompted by the Service’s application form (such information being the
+              “Application Form”).</p>
+            <h2>1. Contact addresses</h2>
+            <p>Responsibility for the processing of personal data:</p>
+            <p>AnteData AG<br>
+              Rebhaldenstrasse&nbsp;18<br>8002, Zürich<br>
+              rafail.aliev@antedata.ch</p>
+            <p>We would like to point out if there are other persons responsible for the processing of personal data in
+              individual cases.</p>
+            <h2>2. Terms</h2>
+            <p>Personal data is all information that relates to an identified or identifiable natural person. A data
+              subject is a person about whom we process personal data.</p>
+            <p>Processing includes any handling of personal data, regardless of the means and procedures used, for
+              example
+              querying, comparing, adapting, archiving, storing, reading out, disclosing, procuring, collecting,
+              collecting, deleting, disclosing, organizing, storing, changing, distributing, linking, destroying and
+              using
+              personal data.</p>
+            <p>The European Economic Area (EEA) comprises the member States of the European Union (EU) as well as the
+              Principality of Liechtenstein, Iceland and Norway. The General Data Protection Regulation (GDPR) refers to
+              the processing of personal data as the processing of personal data.</p>
+            <h2>3. Legal bases</h2>
+            <p>We process personal data in accordance with Swiss data protection law, in particular the Federal Act on
+              Data Protection (Data Protection Act, DSG) and the Ordinance on Data Protection (Data Protection
+              Ordinance,
+              DSV).</p>
+            <p>If and to the extent that the General Data Protection Regulation (GDPR) is applicable, we process
+              personal
+              data in accordance with Art. 6 para. 1 of the GDPR.</p>
+            <h2>4. Nature, scope and purpose</h2>
+            <p>We process the personal data that is necessary to be able to carry out our activities and activities
+              permanently, user-friendly, secure and reliable. Such personal data can be in particular in the name,
+              address, email address, IP address, or phone number, and that is not otherwise publicly available.</p>
+            <p>We process personal data for the period necessary for the respective purpose or purposes or as required
+              by
+              law. Personal data whose processing is no longer required will be anonymized or deleted. We don’t have
+              personal data processed by third parties.</p>
+            <p>In principle, we only process personal data with the consent of the data subjects. If and to the extent
+              that processing is permitted for other legal reasons, we may refrain from obtaining consent. For example,
+              we
+              may process personal data without consent in order to fulfil a contract, to comply with legal obligations
+              or
+              to safeguard overriding interests.</p>
+            <p>In this context, we process in particular information that a data subject provides when contacting us –
+              for
+              example by letter post, e-mail, instant messaging, contact form, social media or telephone.</p>
+            <p>We also process personal data that we receive from third parties, obtain from publicly accessible sources
+              or collect in the course of carrying out our activities and activities, if and to the extent that such
+              processing is permitted for legal reasons.</p>
+            <h2>5. Information sharing and disclosure</h2>
+            <p>AnteData does not rent, sell, or share personal information about you with other people or nonaffiliated
+              companies except to provide products or services you’ve requested, when we have your permission, or under
+              the following circumstances:</p>
+            <ul>
+              <li>We provide the information to trusted partners who work on behalf of or with AnteData under
+                confidentiality agreements. However, these companies do not have any independent right to use or share
+                this information.</li>
+              <li>We respond to subpoenas, court orders, or legal process, or to establish or exercise our legal rights
+                or
+                defend against legal claims.</li>
+              <li>We believe it is necessary to share information in order to investigate, prevent, or take action
+                regarding illegal activities, suspected fraud, situations involving potential threats to the physical
+                safety of any person, violations of AnteData’s terms of use, or as otherwise required by law.</li>
+              <li>We transfer information about you if AnteData is acquired by or merged with another company. In this
+                event, AnteData will notify you before information about you is transferred and becomes subject to a
+                different privacy policy.</li>
+            </ul>
+            <h2>6. Rights of data subjects</h2>
+            <h3>6.1 Data protection claims</h3>
+            <p>We grant data subjects all claims in accordance with the applicable data protection law. In particular,
+              data subjects have the following rights:</p>
+            <p>Information: Data subjects can request information as to whether we are processing personal data about
+              them, and if so, which personal data is involved. Data subjects also receive the information that is
+              necessary to assert their data protection claims and to ensure transparency. This includes the processed
+              personal data as such, but also, among other things, information on the purpose of the processing, the
+              duration of storage, any disclosure or export of data to other countries and the origin of the personal
+              data.</p>
+            <p>Correction and restriction: Data subjects can correct incorrect personal data, complete incomplete data
+              and
+              have the processing of their data restricted.</p>
+            <p>Deletion and objection: Data subjects can have personal data deleted ("right to be forgotten") and object
+              to the processing of their data with effect for the future.</p>
+            <p>Data disclosure and data transfer: Data subjects may request the disclosure of personal data or the
+              transfer of their data to another person responsible.</p>
+            <p>We may postpone, restrict or refuse the exercise of the rights of data subjects to the extent permitted
+              by
+              law. We can point out to data subjects any prerequiWebsites to be fulfilled for the exercise of their data
+              protection claims. For example, we may refuse to provide information with reference to trade secrets or
+              the
+              protection of other persons in whole or in part. For example, we may also refuse the deletion of personal
+              data in whole or in part with reference to statutory retention obligations.</p>
+            <p>We may exceptionally provide for costs for the exercise of the rights. We inform affected persons in
+              advance about any costs.</p>
+            <p>We are obliged to take appropriate measures to identify data subjects who request information or assert
+              other rights. Data subjects are obliged to cooperate.</p>
+            <h3>6.2 Right of appeal</h3>
+            <p>Data subjects have the right to enforce their data protection claims by legal means or to lodge a
+              complaint
+              with a competent data protection supervisory authority.</p>
+            <p>The data protection supervisory authority for private controllers and federal bodies in Switzerland is
+              the
+              Federal Data Protection and Information Commissioner (FDPIC).</p>
+            <p>Data subjects have - if and to the extent that the General Data Protection Regulation (GDPR) is
+              applicable
+              – the right to lodge a complaint with a competent European data protection supervisory authority.</p>
+            <h2>7. Data security</h2>
+            <p>We take appropriate technical and organizational measures to ensure data security appropriate to the
+              respective risk. However, we cannot guarantee absolute data security.</p>
+            <p>Access to our Website is carried out by means of transport encryption (SSL / TLS, in particular with the
+              Hypertext Transfer Protocol Secure, abbreviated HTTPS). Most browsers mark transport encryption with a
+              padlock in the address bar.</p>
+            <p>Our digital communication is - as in principle any digital communication - subject to mass surveillance
+              without cause and suspicion as well as other surveillance by security authorities in Switzerland, in the
+              rest of Europe, in the United States of America (USA) and in other countries. We cannot have any direct
+              influence on the corresponding processing of personal data by secret services, police departments and
+              other
+              security authorities.</p>
+            <h2>8. Services of third parties</h2>
+            <p>We use the services of specialized third parties in order to be able to carry out our activities and
+              activities permanently, in a user-friendly, safe and reliable manner. Such services allow us, among other
+              things, to embed functions and content into our Website. In the case of such an embedding, the services
+              used
+              record the IP addresses of the users at least temporarily for technically compelling reasons.</p>
+            <p>For necessary security-relevant, statistical and technical purposes, third parties whose services we use
+              may process data in connection with our activities and activities in an aggregated, anonymized or
+              pseudonymized manner. These are, for example, performance or usage data in order to be able to offer the
+              respective service.</p>
+            <h3>8.1 Digital infrastructure</h3>
+            <p>We use the services of specialized third parties in order to be able to use the necessary digital
+              infrastructure in connection with our activities and activities. These include, for example, hosting and
+              storage services from selected providers.</p>
+            <h3>8.2 Contact options</h3>
+            <p>We use services from selected providers in order to be able to communicate better with third parties,
+              such
+              as potential and existing customers.</p>
+            <h3>8.3 Audio and video conferences</h3>
+            <p>We use specialized services for audio and video conferences to be able to communicate online. For
+              example,
+              we can use it to hold virtual meetings or conduct online lessons and webinars. The legal texts of the
+              individual services, such as data protection declarations and terms of use, also apply to participation in
+              audio and video conferences.</p>
+            <p>We can adapt and supplement this privacy policy at any time. We will inform about such adjustments and
+              additions in an appropriate form, in particular by publishing the current privacy policy on our Website.
+            </p>
+            <a class="btn btn--inverted static__btn" data-close-modal>Got it, take me back&nbsp;<span>to
+                the homepage</span></a>
+          </div>
+          <div class="footer">
+            <div class="container">
+              <p class="footer__copyright">© Copyright Antedata, 2024</p>
+              <div class="footer__links">
+                <a class="footer__link accent" href="#" data-open-modal="terms">Terms of Use</a>
+                <a class="footer__link accent" href="#" data-open-modal="privacy">Privacy policy</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal--preload modal--fit-content modal--responsive modal--no-scale" id="terms" data-modal="terms">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <section class="static static--privacy">
+          <div class="static__header">
+            <div class="static__logo">
+              <img src="./img/svg/logo-antedata.svg" width="157" height="32" alt="Antedata.">
+            </div>
+            <button class="modal__close-btn btn-reset" type="button" aria-label="Close popup" data-close-modal>
+              <svg width="48" height="48">
+                <use xlink:href="./img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="container">
+            <h1>General Terms & Conditions</h1>
+            <p>By accessing this Website ("AnteData’s Website") you agree to be legally bound by these terms of use /
+              disclaimer ("Terms of Use"). Please also consult the applicable additional legal information for your
+              relevant country. If you do not agree to these Terms of Use, do not proceed to further web pages of
+              AnteData’s Website. These Terms of Use as well as the information and materials contained in AnteData’s
+              Website are subject to change from time to time without notice.</p>
+            <h2>1. Access subject to local restrictions</h2>
+            <p>AnteData’s Website and all information and functionality contained within it are not directed at or
+              intended for use by any person resident or located in any jurisdiction where (1) the distribution of such
+              information or functionality is contrary to the laws of such jurisdiction or (2) such distribution is
+              prohibited without obtaining the necessary licenses or authorisations by the relevant branch, subsidiary
+              or
+              affiliate office of AnteData and such licenses or authorisations have not been obtained.</p>
+            <h2>2. No offer</h2>
+            <p>The information contained in AnteData’s Website is just for informational purposes. No information
+              published on AnteData’s Website constitutes a solicitation, an offer, or a recommendation to buy or sell
+              any
+              investment instruments, to effect any transactions, or to conclude any legal act of any kind whatsoever.
+            </p>
+            <p>AnteData does not intend to provide investment, legal or tax advice through AnteData’s Website and does
+              not
+              represent that any securities or services discussed are suitable for any investor. When making a decision
+              about your investments, you should seek the advice of a professional financial advisor.</p>
+            <h2>3. No warranty</h2>
+            <p>Your use of the AnteData’s Website is at your own risk. The AnteData’s Website, together with all
+              content,
+              information and materials contained therein, is provided "as is" and "as available" ", without any
+              representations or warranties of any kind. Any materials, information or content accessed, downloaded or
+              otherwise obtained through the use of the AnteData’s Website is done at your own risk and AnteData is not
+              responsible for any damage to your computer systems or loss of data that results from the download of such
+              material. AnteData and its affiliates expressly disclaimer all representations or warranties of any kind,
+              whether express or implied, with respect to the AnteData’s Website, and all materials, information,
+              content
+              and functionalities contained herein, including but not limited to warranties of title, non-infringement,
+              merchantability or fitness for a particular purpose. Without limiting the foregoing, AnteData does not
+              warrant the accuracy, timeliness, completeness, security, reliability or availability of the AnteData’s
+              Website or the information or results obtained from use of the AnteData’s Website, or that the AnteData’s
+              Website will be available at all times, or is virus-free or error-free.</p>
+            <h2>4. No liability</h2>
+            <p>To the fullest extent permitted by law, in no event shall AnteData or our affiliates, or any of our
+              directors, employees, contractors, service providers or agents have any liability whatsoever to any person
+              for any direct or indirect loss, liability, cost, claim, expense or damage of any kind, whether in
+              contract
+              or in tort, including negligence, or otherwise, arising out of or related to the use of all or part of the
+              AnteData’s Website, or any links to third party Websites.</p>
+            <p>You are solely responsible for acquiring and maintaining such electronic devices and equipment that can
+              handle and will allow you to access and use the AnteData’s Website and for taking adequate and appropriate
+              data security measures in accordance with good industry practice to protect yourself against fraud or
+              cyber-attacks on a continuous basis (e.g. by using the most recent browser versions, and installing
+              recommended security patches and up-to-date anti-virus programs and firewalls). AnteData specifically
+              disclaims all liability for any tampering with any user's computer system by unauthorized parties, or for
+              losses or liabilities suffered by any user arising from viruses or attacks by hackers.</p>
+            <p>This disclaimer of liability applies to any and all damages or injury, including those caused by any
+              failure of performance, error, omission, interruption, deletion, defect, delay in operation or
+              transmission,
+              computer virus, communication line failure, theft, destruction, or unauthorized access, whether for breach
+              of contract, tortious behavior, negligence or under any other cause of action.</p>
+            <h2>5. Forward looking statements</h2>
+            <p>AnteData’s Website may contain statements that constitute "forward looking statements". While these
+              forward
+              looking statements may represent AnteData’s judgment and future expectations, a number of risks,
+              uncertainties and other important factors could cause actual developments and results to differ materially
+              from AnteData’s expectations. AnteData is under no obligation to (and expressly disclaims any such
+              obligation to) update or alter its forward looking statements whether as a result of new information,
+              future
+              events, or otherwise.</p>
+            <h2>6. Performance</h2>
+            <p>The future performance of an investment cannot be deduced from previous market value, i.e. the value of
+              an
+              investment may fall as well as rise. An investment may also lose value due to changes in rates of foreign
+              exchange. AnteData cannot guarantee that any capital invested will maintain or increase in value.</p>
+            <h2>7. Links</h2>
+            <p>AnteData may provide links or access to third-party Websites or other digital properties, including
+              social
+              networking Websites. These content and links are provided solely for your convenience and information.
+              Since
+              AnteData do not control third-party digital properties and are not responsible for any information you may
+              provide while on such digital properties, AnteData encourages to read the privacy policies on those
+              Websites
+              before providing any of your information on such digital properties. AnteData has no control over, does
+              not
+              assume any responsibility for and does not make any warranties or representations as to, any third party
+              content or Websites, including but not limited to, the accuracy, subject matter, quality or timeliness.
+              AnteData shall have no liability for third party content or Websites or Websites linking to or framing the
+              AnteData’s Website.</p>
+            <h2>8. Intellectual property rights</h2>
+            <p>AnteData, or the applicable third party owner, retains all right, title and interest (including
+              copyrights,
+              trademarks, patents, as well as any other intellectual property or other right) in all information and
+              content (including all text, data, graphics and logos) on the AnteData’s Website.</p>
+            <p>Individual pages and/or sections of the AnteData’s Website may be printed for personal or internal use
+              only, and provided that such print outs retain all applicable copyright or other proprietary notices. All
+              users must not, without limitation, modify, copy, transmit, distribute, display, perform, reproduce,
+              publish, license, frame, create derivative works from, transfer or otherwise use in any other way, whether
+              in whole or in part, any information, text, graphics, images, video clips, directories, databases,
+              listings
+              or software obtained from the AnteData’s Website for commercial or public purposes, without the prior
+              written permission of AnteData.</p>
+            <p>Systematic retrieval of content from the AnteData’s Website to create or compile, directly or indirectly,
+              a
+              collection, compilation, database or directory (whether through robots, spiders, automatic devices or
+              manual
+              processes) or creating links to the AnteData’s Website without the prior written permission from AnteData
+              is
+              strictly prohibited.</p>
+            <p>The AnteData logo is among the registered and unregistered trademarks of AnteData. Other marks may be
+              trademarks of their respective owners. Except as noted above, you may not use any trademarks of AnteData
+              for
+              any purpose without the prior written permission of AnteData.</p>
+            <h2>9. Privacy statement</h2>
+            <p>AnteData has established a Privacy Statement, as modified from time to time, which explains how personal
+              data is collected on the AnteData’s Website and used. The Privacy Statement is part of these Terms of Use
+              and is incorporated herein by reference.</p>
+            <h2>10. Severability clause</h2>
+            <p>To the extent that any provision of these Terms of Use is found by any competent court or authority to be
+              invalid, unlawful or unenforceable in any jurisdiction, that provision shall be deemed to be severed from
+              these Terms of Use but such finding shall not affect the validity, lawfulness or enforceability of the
+              remainder of these Terms of Use in that jurisdiction, nor shall it affect the validity, lawfulness or
+              enforceability of these Terms of Use in any other jurisdiction.</p>
+            <a href="index.html" class="btn btn--inverted static__btn">Got it, take me back&nbsp;<span>to the
+                homepage</span></a>
+          </div>
+          <div class="footer">
+            <div class="container">
+              <p class="footer__copyright">© Copyright Antedata, 2024</p>
+              <div class="footer__links">
+                <a class="footer__link accent" href="#" data-open-modal="terms">Terms of Use</a>
+                <a class="footer__link accent" href="#" data-open-modal="privacy">Privacy policy</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
   <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js?v=190620241"></script>
+  <script src="js/main.min.js?v=16072024"></script>
 </body>
 
 </html>

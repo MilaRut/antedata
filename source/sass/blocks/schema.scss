@@ -57,8 +57,19 @@
     gap: 40px;
   }
 
+  @include vp-1023 {
+    border-color: $color-bright-turquoise;
+  }
+
   @include vp-767 {
     gap: 15px;
+  }
+
+  &--1 {
+    @include vp-1023 {
+      opacity: 0;
+      transform: translateY(200px);
+    }
   }
 
   &--2 {
@@ -69,6 +80,9 @@
     @include vp-1023 {
       flex-direction: column-reverse;
       padding-top: 18px;
+      border-color: $color-mandalay;
+      opacity: 0;
+      transform: translateY(200px);
     }
   }
 }
@@ -117,6 +131,7 @@
   flex-direction: column;
   align-items: center;
   max-width: 213px;
+  opacity: 0;
 
   @include vp-1023 {
     width: 100%;
@@ -126,6 +141,7 @@
     background: url("../img/shema-frame-mob.png") center no-repeat;
     background-size: contain;
     padding: 24px 10px 0px;
+    opacity: 1;
   }
 
   &--1,
@@ -199,7 +215,6 @@
   width: 75px;
   height: 75px;
   margin-bottom: 17px;
-  opacity: 0;
 
   @include vp-1023 {
     margin-bottom: 7px;
@@ -211,8 +226,6 @@
     @include font-settings($ff-bahn, 600, 32px, 1);
     text-transform: uppercase;
     margin-bottom: 9px;
-    opacity: 0;
-    transform: translateY(-50px);
 
     @include vp-1279 {
       font-size: 26px;
@@ -225,8 +238,6 @@
 
   .schema__text-descr {
     @include font-settings($ff-tilda, 400, 18px, 1.2);
-    opacity: 0;
-    transform: translateY(-50px);
 
     @include vp-1279 {
       font-size: 16px;
@@ -238,8 +249,13 @@
   opacity: 0;
   transform: translateX(-10px);
 
+  @include vp-1023 {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
   p {
-    @include font-settings($ff-tilda, 400, 18px, 1.2);
+    @include font-settings($ff-tilda, 400, 21px, 1.2);
 
     @include vp-1023 {
       font-size: 16px;
@@ -258,6 +274,10 @@
 
 .schema__bottom-left {
   opacity: 0;
+
+  @include vp-1023 {
+    opacity: 1;
+  }
 
   p {
     @include font-settings($ff-bahn, 600, 32px, 1.2);

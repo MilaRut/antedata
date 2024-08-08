@@ -13,7 +13,7 @@
 }
 
 .footer__copyright {
-  @include font-settings($ff-tilda, 400, 18px, 1.2);
+  @include font-settings($ff-tilda, 400, 21px, 1.2);
   margin-bottom: 9px;
 
   @include vp-767 {
@@ -23,7 +23,7 @@
 }
 
 .footer__link {
-  @include font-settings($ff-tilda, 700, 18px, 1.2);
+  @include font-settings($ff-tilda, 700, 21px, 1.2);
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-skip-ink: none;

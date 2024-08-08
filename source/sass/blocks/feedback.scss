@@ -61,6 +61,10 @@
     margin-bottom: 5px;
   }
 
+  .icon {
+    margin-right: 8px;
+  }
+
   &--tel {
     @include font-settings($ff-tilda, 700, 32px, 1);
     text-transform: uppercase;
@@ -83,7 +87,6 @@
       padding-top: 16px;
 
       @include vp-767 {
-        margin-right: 23px !important;
         padding-top: 4px;
       }
     }
@@ -91,15 +94,11 @@
 
   &--address,
   &--email {
-    @include font-settings($ff-tilda, 400, 18px, 1.2);
+    @include font-settings($ff-tilda, 400, 21px, 1.2);
     max-width: 82%;
 
     @include vp-1023 {
       font-size: 16px;
-    }
-
-    .icon {
-      margin-right: 8px;
     }
   }
 
@@ -162,8 +161,9 @@
 }
 
 .feedback__form-title {
-  @include font-settings($ff-tilda, 500, 24px, 1.2);
+  @include font-settings($ff-bahn, 600, 32px, 1.2);
   margin-bottom: 32px;
+  text-transform: uppercase;
 
   @include vp-767 {
     text-align: center;
@@ -187,15 +187,17 @@
     max-width: 400px;
   }
 
-  label {
+  span:has(input),
+  span:has(textarea) {
+    display: block;
     width: 100%;
+    margin-bottom: 15px;
   }
 
   input,
   textarea {
-    @include font-settings($ff-tilda, 400, 18px, 1);
+    @include font-settings($ff-tilda, 400, 21px, 1);
     width: 100%;
-    margin-bottom: 15px;
     background-color: $color-matterhorn;
     border: none;
     border-radius: 4px;
@@ -207,7 +209,7 @@
     }
 
     &::placeholder {
-      @include font-settings($ff-tilda, 400, 18px, 1);
+      @include font-settings($ff-tilda, 400, 21px, 1);
       color: $color-bright-turquoise;
     }
 
@@ -231,6 +233,33 @@
   textarea {
     min-height: 72px;
   }
+
+  input[type="submit"] {
+    @include font-settings($ff-tilda, 700, 21px, 1);
+    color: $color-default-black;
+    text-transform: uppercase;
+    width: 160px !important;
+    height: 40px !important;
+    margin: 0 auto;
+    background: $color-bright-turquoise url("../img/svg/send.svg") 44px 50% no-repeat !important;
+    padding: 10px 20px 10px 56px !important;
+
+    border-radius: 50px !important;
+    cursor: pointer;
+    transition: background-color $trans-default;
+
+    @include vp-767 {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @include hover {
+      background-color: $color-default-white !important;
+      opacity: 1;
+    }
+  }
 }
 
 .feedback__agreement {
@@ -249,35 +278,5 @@
     @include hover {
       opacity: 0.5;
     }
-  }
-}
-
-.feedback__form-submit {
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  padding: 9px 44px;
-  transition: background-color $trans-default;
-
-  @include vp-767 {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .button-icon {
-    margin-right: 8px;
-  }
-
-  .button-text {
-    @include font-settings($ff-tilda, 700, 18px, 1);
-    text-transform: uppercase;
-  }
-
-  @include hover {
-    background-color: $color-default-white;
-    opacity: 1;
   }
 }

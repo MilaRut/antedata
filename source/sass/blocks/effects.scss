@@ -6,255 +6,303 @@
   }
 }
 
-.start.schema__icon {
-  animation: show 0.5s forwards;
+// .start.schema__icon {
+//   animation: show 0.5s forwards;
 
-  &--1 {
-    animation-delay: 0.5s;
-  }
+//   &--1 {
+//     animation-delay: 0.5s;
+//   }
 
-  &--2 {
-    animation-delay: 1.5s;
-  }
+//   &--2 {
+//     animation-delay: 1.5s;
+//   }
 
-  &--3 {
-    animation-delay: 4.5s;
+//   &--3 {
+//     animation-delay: 4.5s;
 
-    @include vp-1023 {
-      animation-delay: 5s;
-    }
-  }
+//     @include vp-1023 {
+//       animation-delay: 5s;
+//     }
+//   }
 
-  &--4 {
-    animation-delay: 6s;
-  }
-}
+//   &--4 {
+//     animation-delay: 6s;
+//   }
+// }
 
-.start.schema__text-title {
-  animation: slide-down-fade-in 0.5s forwards;
-  animation-timing-function: ease-in-out;
+// .start.schema__text-title {
+//   animation: slide-down-fade-in 0.5s forwards;
+//   animation-timing-function: ease-in-out;
 
-  &--1 {
-    animation-delay: 0.8s;
-  }
+//   &--1 {
+//     animation-delay: 0.8s;
+//   }
 
-  &--2 {
-    animation-delay: 1.8s;
-  }
+//   &--2 {
+//     animation-delay: 1.8s;
+//   }
 
-  &--3 {
-    animation-delay: 4.8s;
+//   &--3 {
+//     animation-delay: 4.8s;
 
-    @include vp-1023 {
-      animation-delay: 5.8s;
-    }
-  }
+//     @include vp-1023 {
+//       animation-delay: 5.8s;
+//     }
+//   }
 
-  &--4 {
-    animation-delay: 6.3s;
-  }
-}
+//   &--4 {
+//     animation-delay: 6.3s;
+//   }
+// }
 
-.start.schema__text-descr {
-  animation: slide-down-fade-in 0.2s forwards;
-  animation-timing-function: ease-in-out;
+// .start.schema__text-descr {
+//   animation: slide-down-fade-in 0.2s forwards;
+//   animation-timing-function: ease-in-out;
 
-  &--1 {
-    animation-delay: 1s;
-  }
+//   &--1 {
+//     animation-delay: 1s;
+//   }
 
-  &--2 {
-    animation-delay: 2s;
-  }
+//   &--2 {
+//     animation-delay: 2s;
+//   }
 
-  &--3 {
-    animation-delay: 5s;
+//   &--3 {
+//     animation-delay: 5s;
 
-    @include vp-1023 {
-      animation-delay: 6s;
-    }
-  }
+//     @include vp-1023 {
+//       animation-delay: 6s;
+//     }
+//   }
 
-  &--4 {
-    animation-delay: 6.5s;
-  }
-}
+//   &--4 {
+//     animation-delay: 6.5s;
+//   }
+// }
 
 .start.schema__frame {
 
   &--1,
   &--2,
-  &--3 {
+  &--3,
+  &--4 {
+    animation: show 0.3s forwards;
+
+    @include vp-1023 {
+      animation: none;
+    }
+
     &::after {
-      animation: slide-right-fade-in 1s forwards;
+      animation: slide-right-fade-in 0.3s forwards;
     }
   }
 
   &--1 {
+    animation-delay: 1s;
+
     &::after {
-      animation-delay: 1s;
+      animation-delay: 1.3s;
     }
   }
 
   &--2 {
+    animation-delay: 1.6s;
+
     &::after {
-      animation-delay: 4s;
+      animation-delay: 1.9s;
     }
   }
 
   &--3 {
+    animation-delay: 2.2s;
+
     &::after {
-      animation-delay: 5.5s;
+      animation-delay: 2.5s;
+    }
+
+    @include vp-1023 {
+      // animation-delay: 3.1s;
+      animation: none;
+    }
+  }
+
+  &--4 {
+    animation-delay: 2.7s;
+
+    @include vp-1023 {
+      // animation-delay: 3.4s;
+      animation: none;
     }
   }
 }
 
+
+.start.schema__svg {
+  .path-1 {
+    animation: draw-line 0.6s linear 3s forwards;
+  }
+
+  .path-2 {
+    animation: fade-in 0.6s linear 3s forwards;
+  }
+
+  .path-3 {
+    animation: draw-line 0.6s linear 3.9s forwards;
+  }
+
+  .path-4 {
+    animation: fade-in 0.6s linear 3.9s forwards;
+  }
+}
+
 .start.schema__bottom-left {
-  animation: show 1s forwards;
+  animation: show 0.3s forwards;
   animation-timing-function: ease-in-out;
 
   &--1 {
-    animation-delay: 3s;
+    animation-delay: 3.3s;
+
+    @include vp-1023 {
+      // animation-delay: 2.2s;
+      animation: none;
+    }
   }
 
   &--2 {
-    animation-delay: 7.5s;
+    animation-delay: 4.2s;
 
     @include vp-1023 {
-      animation-delay: 4s;
+      // animation-delay: 2.4s;
+      animation: none;
     }
   }
 }
 
 .start.schema__bottom-right {
-  animation: slide-right-fade-in 1s forwards;
+  animation: slide-right-fade-in 0.3s forwards;
   animation-timing-function: ease-in-out;
 
   &--1 {
-    animation-delay: 3.5s;
+    animation-delay: 3.6s;
+
+    @include vp-1023 {
+      // animation-delay: 2.5s;
+      animation: none;
+    }
   }
 
   &--2 {
-    animation-delay: 8s;
+    animation-delay: 4.5s;
 
     @include vp-1023 {
-      animation-delay: 4.5s;
+      // animation-delay: 2.7s;
+      animation: none;
     }
-  }
-}
-
-.start.schema__svg {
-  .path-1 {
-    animation: draw-line 1s linear 2.5s forwards;
-  }
-
-  .path-2 {
-    animation: fade-in 1s linear 2.5s forwards;
-  }
-
-  .path-3 {
-    animation: draw-line 1s linear 7s forwards;
-  }
-
-  .path-4 {
-    animation: fade-in 1s linear 7s forwards;
   }
 }
 
 .start.schema__block {
   &--1 {
     @include vp-1279 {
-      animation: border-color-1 2s forwards;
-      animation-delay: 2.5s;
+      animation: border-color-1 1s forwards;
+      animation-delay: 1.9s;
+    }
+
+    @include vp-1023 {
+      animation: slide-up 0.5s forwards;
     }
   }
 
   &--2 {
     @include vp-1279 {
-      animation: border-color-2 2s forwards;
-      animation-delay: 7s;
+      animation: border-color-2 1s forwards;
+      animation-delay: 3.9s;
 
       @include vp-1023 {
-        animation-delay: 6.5s;
+        // animation-delay: 3.7s;
+        animation: slide-up 0.5s forwards;
       }
     }
   }
 }
 
+// .start.schema {
+//   .schema__block {
+//     &--1 {
+//       @include vp-1023 {
+//         animation: slide-up 0.5s forwards;
+//       }
+//     }
+
+//     &--2 {
+//       @include vp-1023 {
+//         animation: slide-up 0.5s forwards;
+//         animation-delay: 1s;
+//       }
+//     }
+//   }
+// }
+
 // chart
 
-.start.chart {
-  .chart__item {
-    animation: chart-slide-right 0.3s forwards;
-
-    @include vp-1023 {
-      animation: chart-slide-down 0.3s forwards;
-      animation-timing-function: ease-in-out;
-    }
-
-    &--1 {
-      animation-delay: 1s;
-    }
-
-    &--2 {
-      animation-delay: 1.5s;
-    }
-
-    &--3 {
-      animation-delay: 2.8s;
-    }
-
-    &--4 {
-      animation-delay: 3.7s;
-    }
-  }
-
+.start.chart__list {
   .chart__bubble {
     &--1 {
-      animation: chart-fade-in 0.7s forwards;
-      animation-delay: 1.5s;
+      &::before {
+        animation: bubble-show 1s ease forwards;
+        animation-delay: 2.3s;
 
-      @include vp-1023 {
-        animation: chart-slide-right 0.5s forwards;
-        animation-delay: 1.5s;
-      }
-    }
-
-    &--2 {
-      animation: chart-fade-in 0.7s forwards;
-      animation-delay: 3s;
-
-      @include vp-1023 {
-        animation: chart-slide-right 0.5s forwards;
-        animation-delay: 3.5s;
+        @include vp-1023 {
+          animation: bubble-show-mob 1s ease forwards;
+          animation-delay: 2s;
+        }
       }
     }
 
     &--3 {
       &::before {
-        animation: show 0.5s forwards;
-        animation-delay: 4.3s;
-      }
-
-      &::after {
-        animation: chart-stretch 0.5s forwards;
-        animation-delay: 3.7s;
+        animation: bubble-show 1s ease forwards;
+        animation-delay: 3.2s;
 
         @include vp-1023 {
-          animation: chart-stretch-mob 0.7s forwards;
-          animation-delay: 4.2s;
+          animation: bubble-show-mob 1s ease forwards;
+          animation-delay: 3s;
         }
       }
     }
 
     &--4 {
-      animation: chart-fade-in 0.7s forwards;
-      animation-delay: 4.4s;
+      &::before {
+        animation: bubble-show 1s ease forwards;
+        animation-delay: 4s;
 
-      @include vp-1023 {
-        animation: chart-slide-right 0.5s forwards;
-        animation-delay: 6.5s;
+        @include vp-1023 {
+          animation: bubble-show-mob 1s ease forwards;
+          animation-delay: 4s;
+        }
       }
+    }
+  }
+
+  .blue-bg {
+    &--1 {
+      animation: chart-bg 0.5s cubic-bezier(.13, .5, .73, .51) forwards;
+      animation-delay: 0.5s;
+    }
+
+    &--2 {
+      animation: chart-bg 0.5s cubic-bezier(.13, .5, .73, .51) forwards;
+      animation-delay: 1.5s;
+    }
+
+    &--3 {
+      animation: chart-bg 0.5s cubic-bezier(.13, .5, .73, .51) forwards;
+      animation-delay: 2.5s;
+    }
+
+    &--4 {
+      animation: chart-bg 0.5s cubic-bezier(.13, .5, .73, .51) forwards;
+      animation-delay: 3.5s;
     }
   }
 }
@@ -425,16 +473,4 @@
 .start.contacts__description {
   animation: slide-up 0.6s forwards;
   animation-delay: 0.5s;
-}
-
-.start.partnership__list {
-  .partnership__item {
-    &--1 {
-      animation: slide-right 0.6s forwards;
-    }
-
-    &--2 {
-      animation: slide-left 0.6s forwards;
-    }
-  }
 }

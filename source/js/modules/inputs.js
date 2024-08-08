@@ -5,7 +5,7 @@ function setInputBg() {
     return;
   }
 
-  const formElements = document.querySelectorAll('[form-el]');
+  const formElements = document.querySelectorAll('.form-el');
 
   formElements.forEach((el) => {
     el.addEventListener('change', () => {
