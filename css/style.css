@@ -4077,8 +4077,8 @@ a {
 
 @media (max-width: 1279px) and (max-width: 1023px) {
   .start.schema__block--2 {
-    -webkit-animation-delay: 3.7s;
-    animation-delay: 3.7s;
+    -webkit-animation: slide-up 0.5s forwards;
+    animation: slide-up 0.5s forwards;
   }
 }
 
@@ -4541,12 +4541,28 @@ a {
     display: none;
   }
 
+  .schema__block {
+    border-color: #01e4db;
+  }
+
+  .schema__block--1 {
+    opacity: 0;
+    -webkit-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    transform: translateY(200px);
+  }
+
   .schema__block--2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
     padding-top: 18px;
+    border-color: #b58426;
+    opacity: 0;
+    -webkit-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    transform: translateY(200px);
   }
 
   .schema__row {
@@ -4576,6 +4592,7 @@ a {
     background: url("../img/shema-frame-mob.png") center no-repeat;
     background-size: contain;
     padding: 24px 10px 0px;
+    opacity: 1;
   }
 
   .schema__frame--1::after,
@@ -4601,8 +4618,19 @@ a {
     margin-bottom: 4px;
   }
 
+  .schema__bottom-right {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
   .schema__bottom-right p {
     font-size: 16px;
+  }
+
+  .schema__bottom-left {
+    opacity: 1;
   }
 
   .feedback__address--tel {
@@ -4665,34 +4693,47 @@ a {
     margin-bottom: 14px;
   }
 
+  .start.schema__frame--1,
+  .start.schema__frame--2,
+  .start.schema__frame--3,
+  .start.schema__frame--4 {
+    -webkit-animation: none;
+    animation: none;
+  }
+
   .start.schema__frame--3 {
-    -webkit-animation-delay: 3.1s;
-    animation-delay: 3.1s;
+    -webkit-animation: none;
+    animation: none;
   }
 
   .start.schema__frame--4 {
-    -webkit-animation-delay: 3.4s;
-    animation-delay: 3.4s;
+    -webkit-animation: none;
+    animation: none;
   }
 
   .start.schema__bottom-left--1 {
-    -webkit-animation-delay: 2.2s;
-    animation-delay: 2.2s;
+    -webkit-animation: none;
+    animation: none;
   }
 
   .start.schema__bottom-left--2 {
-    -webkit-animation-delay: 2.4s;
-    animation-delay: 2.4s;
+    -webkit-animation: none;
+    animation: none;
   }
 
   .start.schema__bottom-right--1 {
-    -webkit-animation-delay: 2.5s;
-    animation-delay: 2.5s;
+    -webkit-animation: none;
+    animation: none;
   }
 
   .start.schema__bottom-right--2 {
-    -webkit-animation-delay: 2.7s;
-    animation-delay: 2.7s;
+    -webkit-animation: none;
+    animation: none;
+  }
+
+  .start.schema__block--1 {
+    -webkit-animation: slide-up 0.5s forwards;
+    animation: slide-up 0.5s forwards;
   }
 
   .start.chart__list .chart__bubble--1::before {
