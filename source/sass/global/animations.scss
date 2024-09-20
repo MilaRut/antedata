@@ -140,16 +140,6 @@
 
 // schema border
 
-@keyframes dash {
-  from {
-    stroke-dashoffset: 2000;
-  }
-
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
 @keyframes border-color-1 {
   from {
     border-color: transparent;
@@ -172,14 +162,14 @@
 
 @keyframes draw-line {
   100% {
-     stroke-dashoffset: 0;
-     opacity: 1;
+    stroke-dashoffset: 0;
+    opacity: 1;
   }
 }
 
 @keyframes fade-in {
   100% {
-     opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -192,18 +182,6 @@
 
   100% {
     opacity: 1;
-  }
-}
-
-@keyframes slide-down-fade-in {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -249,16 +227,6 @@
   }
 
   100% {
-    opacity: 100%;
-  }
-}
-
-@keyframes chart-bg-mob {
-  from {
-    opacity: 0;
-  }
-
-  to {
     opacity: 100%;
   }
 }

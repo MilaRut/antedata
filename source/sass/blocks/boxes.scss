@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   margin-right: 119px;
-  margin-top: -44px;
+  margin-top: -34px;
   overflow: hidden;
 
   &::before {
@@ -46,28 +46,6 @@
     position: absolute;
     overflow: hidden;
     margin-right: 10px;
-
-    &::before,
-    &::after {
-      position: absolute;
-      // content: "";
-      z-index: 1;
-      bottom: -2px;
-    }
-
-    &::before {
-      width: 36px;
-      height: 9px;
-      background: linear-gradient(-168deg, transparent 0%, transparent 50%, #1f3332 50%, #1f3332 100%);
-      left: 0;
-    }
-
-    &::after {
-      width: 22px;
-      height: 14px;
-      background: linear-gradient(150deg, transparent 0%, transparent 50%, #1f3332 50%, #1f3332 100%);
-      right: 0;
-    }
   }
 
   .box--1 {

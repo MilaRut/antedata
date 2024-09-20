@@ -163,12 +163,14 @@
   }
 }
 
+/* stylelint-disable-next-line */
 #collective {
   .modal__title {
     padding-left: 25px;
   }
 }
 
+/* stylelint-disable-next-line */
 #collective,
 #performance {
   .modal__content {
@@ -185,6 +187,7 @@
   }
 }
 
+/* stylelint-disable-next-line */
 #certificate {
   .modal__content {
     padding: 46px 64px 22px;
@@ -290,6 +293,7 @@
   }
 }
 
+/* stylelint-disable-next-line */
 #feedback {
   .modal__content {
     padding: 34px 186px 90px;
@@ -301,6 +305,7 @@
 
   .modal__inner-content {
     max-width: 788px;
+    flex-wrap: wrap;
   }
 
   .modal__heading {
@@ -367,6 +372,7 @@
   }
 }
 
+/* stylelint-disable-next-line */
 #terms,
 #privacy {
   .modal__wrapper {

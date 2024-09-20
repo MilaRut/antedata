@@ -6,82 +6,7 @@
   }
 }
 
-// .start.schema__icon {
-//   animation: show 0.5s forwards;
-
-//   &--1 {
-//     animation-delay: 0.5s;
-//   }
-
-//   &--2 {
-//     animation-delay: 1.5s;
-//   }
-
-//   &--3 {
-//     animation-delay: 4.5s;
-
-//     @include vp-1023 {
-//       animation-delay: 5s;
-//     }
-//   }
-
-//   &--4 {
-//     animation-delay: 6s;
-//   }
-// }
-
-// .start.schema__text-title {
-//   animation: slide-down-fade-in 0.5s forwards;
-//   animation-timing-function: ease-in-out;
-
-//   &--1 {
-//     animation-delay: 0.8s;
-//   }
-
-//   &--2 {
-//     animation-delay: 1.8s;
-//   }
-
-//   &--3 {
-//     animation-delay: 4.8s;
-
-//     @include vp-1023 {
-//       animation-delay: 5.8s;
-//     }
-//   }
-
-//   &--4 {
-//     animation-delay: 6.3s;
-//   }
-// }
-
-// .start.schema__text-descr {
-//   animation: slide-down-fade-in 0.2s forwards;
-//   animation-timing-function: ease-in-out;
-
-//   &--1 {
-//     animation-delay: 1s;
-//   }
-
-//   &--2 {
-//     animation-delay: 2s;
-//   }
-
-//   &--3 {
-//     animation-delay: 5s;
-
-//     @include vp-1023 {
-//       animation-delay: 6s;
-//     }
-//   }
-
-//   &--4 {
-//     animation-delay: 6.5s;
-//   }
-// }
-
 .start.schema__frame {
-
   &--1,
   &--2,
   &--3,
@@ -121,7 +46,6 @@
     }
 
     @include vp-1023 {
-      // animation-delay: 3.1s;
       animation: none;
     }
   }
@@ -130,7 +54,6 @@
     animation-delay: 2.7s;
 
     @include vp-1023 {
-      // animation-delay: 3.4s;
       animation: none;
     }
   }
@@ -163,7 +86,6 @@
     animation-delay: 3.3s;
 
     @include vp-1023 {
-      // animation-delay: 2.2s;
       animation: none;
     }
   }
@@ -172,7 +94,6 @@
     animation-delay: 4.2s;
 
     @include vp-1023 {
-      // animation-delay: 2.4s;
       animation: none;
     }
   }
@@ -186,7 +107,6 @@
     animation-delay: 3.6s;
 
     @include vp-1023 {
-      // animation-delay: 2.5s;
       animation: none;
     }
   }
@@ -195,7 +115,6 @@
     animation-delay: 4.5s;
 
     @include vp-1023 {
-      // animation-delay: 2.7s;
       animation: none;
     }
   }
@@ -219,29 +138,11 @@
       animation-delay: 3.9s;
 
       @include vp-1023 {
-        // animation-delay: 3.7s;
         animation: slide-up 0.5s forwards;
       }
     }
   }
 }
-
-// .start.schema {
-//   .schema__block {
-//     &--1 {
-//       @include vp-1023 {
-//         animation: slide-up 0.5s forwards;
-//       }
-//     }
-
-//     &--2 {
-//       @include vp-1023 {
-//         animation: slide-up 0.5s forwards;
-//         animation-delay: 1s;
-//       }
-//     }
-//   }
-// }
 
 // chart
 
@@ -286,22 +187,22 @@
 
   .blue-bg {
     &--1 {
-      animation: chart-bg 0.5s cubic-bezier(.13, .5, .73, .51) forwards;
+      animation: chart-bg 0.5s cubic-bezier(0.13, 0.5, 0.73, 0.51) forwards;
       animation-delay: 0.5s;
     }
 
     &--2 {
-      animation: chart-bg 0.5s cubic-bezier(.13, .5, .73, .51) forwards;
+      animation: chart-bg 0.5s cubic-bezier(0.13, 0.5, 0.73, 0.51) forwards;
       animation-delay: 1.5s;
     }
 
     &--3 {
-      animation: chart-bg 0.5s cubic-bezier(.13, .5, .73, .51) forwards;
+      animation: chart-bg 0.5s cubic-bezier(0.13, 0.5, 0.73, 0.51) forwards;
       animation-delay: 2.5s;
     }
 
     &--4 {
-      animation: chart-bg 0.5s cubic-bezier(.13, .5, .73, .51) forwards;
+      animation: chart-bg 0.5s cubic-bezier(0.13, 0.5, 0.73, 0.51) forwards;
       animation-delay: 3.5s;
     }
   }
@@ -356,7 +257,6 @@
 .start.why__image {
   animation: slide-up 0.6s forwards;
   animation-delay: 0.5s;
-
 }
 
 .start.why__statistics-list {

@@ -137,6 +137,7 @@
 
 .why__statistics-item {
   @include vp-767 {
+    /* stylelint-disable-next-line */
     max-width: 100% !important;
     display: flex;
     gap: 16px;

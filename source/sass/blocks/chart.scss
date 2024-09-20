@@ -58,7 +58,6 @@
   }
 
   &:not(:last-child) {
-
     &::before,
     &::after {
       position: absolute;
@@ -235,7 +234,6 @@
     }
 
     .bubble-helper {
-
       &::before,
       &::after {
         position: absolute;
